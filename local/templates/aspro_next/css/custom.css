@@ -1,0 +1,141 @@
+/*NOTE: This file is intended for programmers. Aspro technical support is not advised to work with him.*/
+
+/* Examples (uncomment to use):*/
+
+/* Expand site width */
+/* body .wrapper { max-width: 1400px !important;  } */
+
+/* Set site background image */
+/* body {  background: url(image_source) top no-repeat; }
+
+/* Hide compare button */
+/* a.compare_item { display: none !important;  }*/
+
+.inner-table-block.header-phone-block {
+    padding: 0;
+    display: inline-block;
+}
+.inner-table-block.baskets.big-padding {
+}
+.inner-table-block.header-phone-block {
+    height: auto;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.search_wrap .inner-table-block.baskets {
+    height: auto;
+}
+.logo_and_menu-row .search-wrapper {
+    height: auto;
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+}
+.search-block.inner-table-block {
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 1025px){
+    .logo_and_menu-row .phone {
+        float: left;
+        margin: 0;
+    }
+}
+.logo_and_menu-row .callback-block {
+    margin-left: 10px;
+    /*font-weight: bold;*/
+}
+.svg-phone {
+    border-radius: 100%;
+    background-color: #9dd1e9;
+    color: white;
+    height: 20px;
+    width: 20px;
+    filter: invert(100%);
+}
+.inner-table-block.header-phone-block:first-child {
+    margin-left: 0;
+}
+.search-block.inner-table-block {
+    width: 100% !important;
+    padding-top: 5px;
+}
+.fixed .logo-row .logo img, .fixed .logo-row .logo svg {
+    width: auto;
+}
+.fixed .logo {
+    width: 100%;
+    text-align: center;
+}
+.quantity_block_wrapper .cnt0 * {
+    text-align: center;
+    color: #622e16;
+    font-size: 15px;
+}
+.quantity_block_wrapper.cnt0 {
+    text-align: center;
+}
+.cnt0 .button_block.wide .btn-default,
+.cnt0 .button_block.wide .btn-default span {
+    border-color: #622e16;
+    border-width: 2px;
+    color: #622e16;
+}
+.cnt0 .button_block.wide .btn-default:hover, .button_block.wide .btn-default span:hover {
+    color: #fff;
+}
+.quantity_block_wrapper:not(.cnt0) .store_view {
+    color: #37ac09 !important;
+    border: none !important;
+}
+
+.item-stock .icon {
+    display: none;
+}
+.item-stock > span {
+    word-break: break-word;
+    white-space: normal;
+}
+.header-phone-block {
+    padding-right: 10px;
+}
+.sort_display a.block_custom i {background-position: 0 -17px;}
+.sort_display a.block_custom.current i {background-position: 0 0;}
+.sort_display a.list_custom i {background-position: -29px -17px;}
+.sort_display a.list_custom.current i {background-position: -29px 0}
+.sort_display a.table_custom i {background-position: -57px -17px;}
+.sort_display a.table_custom.current i {background-position: -57px 0}
+td.like_icons.full {position: relative;top: 0;right: 0;}
+.module_products_list td.like_icons .wrapp_stockers .like_icons {top: 50%;margin-top: -15px;position: static;margin: 0;}
+.basket-item-block-amount.hideMinus:before{content: "";position: absolute;top: 0;left: 0;width: 35px;height: 35px;z-index: 2;}
+.container.tech_char_wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.container.tech_char_wrapper h4 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.container.tech_char_wrapper > div > div{
+    padding-right: 35px;
+}
+.container.tech_char_wrapper ul {
+    list-style: none;
+}.right_block .container.tech_char_wrapper ul li {
+    padding-left: 0;
+    margin-bottom: 12px;
+    line-height: 1.4;
+ }
+
+.right_block .container.tech_char_wrapper ul li::before {
+    display: none;
+}
+.tab-pane.review {
+    margin-top: 45px;
+}

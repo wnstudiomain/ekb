@@ -1,0 +1,27 @@
+.title-search-input_fixed .bx_searche.scrollbar .bx_img_element {
+	width: 80px;
+    height: 80px;
+    line-height: 80px;
+}
+.title-search-input_fixed .bx_searche.scrollbar .bx_img_element+.bx_item_element {
+	margin-left: 0px;
+	padding-left: 0;
+	line-height: 20px;
+	white-space: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.title-search-input_fixed .bx_item_element .title-search-price {
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+div.title-search-result {
+	display: block !important;
+}
+.bx_searche .bx_item_block > div {
+	display: flex;
+}
+.bx_searche .bx_item_block > div  .cost.prices .price {
+	font-size: 16px;
+}
