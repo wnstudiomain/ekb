@@ -1,5 +1,5 @@
 body h1 { font-weight: normal; }
-body h1, body h2, body h3, body h4, body h5, body h6 { font-weight: normal; }
+body h1, body h2, body h3, body h4, body h5, body h6 { font-weight: normal; font-family: "Montserrat", Helvetica, Arial, sans-serif; }
 body h3.title_block, body h4.title_block, body h5.title_block, body h6.title_block { font-weight: normal; }
 body .group-content h3{font-weight:normal;}
 body .soc-avt .title, .landings_list .title_block{ font-weight: normal; }

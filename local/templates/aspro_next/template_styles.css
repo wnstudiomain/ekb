@@ -7,6 +7,18 @@ html {
 	width: 100%;
 }
 
+html, body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: none;
+    background-color: transparent;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+}
+
 header,
 nav,
 section,
@@ -6250,7 +6262,7 @@ div.title-search-result {
 	border: none;
 	position: absolute;
 }
- 
+
 .wrapper_inner.promo-page .promo-item {
 	display: flex;
 	padding-bottom: 40px;
@@ -6279,13 +6291,20 @@ div.title-search-result {
 
 .wrapper_inner.insta-block {
 	text-align: center;
-	padding: 60px 30px;
+	padding: 60px 30px 90px;
+}
+
+.wrapper_inner.insta-block .insta-info {
+	padding-top: 20px;
+	max-width: 860px;
+
+	margin: 0 auto;
 }
 
 .wrapper_inner.insta-block .insta-block-wrapper {
-	margin-top: 30px;
+	margin-top: 35px;
 }
- 
+
 .wrapper_inner.promo-page .promo-item .info h2 .red {
 	color: #f91155;
 }
@@ -6294,6 +6313,7 @@ div.title-search-result {
 	padding-top: 0px;
 	margin-top: -5px;
 	padding-bottom: 8px;
+	font-size: 16px;
 	color: rgba(0, 0, 0, .6);
 }
 
@@ -10638,6 +10658,7 @@ body .flex-direction-nav li {
 .specials.tab_slider_wrapp {
 	padding: 0px;
 	clear: both;
+	margin-top: 20px;
 }
 
 .tab_slider_wrapp {
@@ -10732,7 +10753,7 @@ body .container .bottom_slider.tab_slider_wrapp .tabs>li {
 
 .tab_slider_wrapp ul.tabs li.cur span {
 	border: none;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 1.6em;
 	line-height: 24px;
 }
@@ -12311,7 +12332,7 @@ footer .footer-grey.ext_view.footer_inner .social-icons .small_title {
 	display: flex;
 	flex: 1 1 100%;
 }
- 
+
 .adv_list .item>div {
 	display: flex;
 	vertical-align: middle;

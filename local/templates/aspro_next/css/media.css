@@ -277,7 +277,7 @@ ul.tabs li.stretch {
 	.info_item .top_info .article {
 		text-align: center;
 	}
- 
+
 	.start_promo_wraper_small {
 		flex: 1 1 65%;
 	}
@@ -1518,7 +1518,7 @@ ul.tabs li.stretch {
 			padding-left: 15px;
 			padding-right: 15px;
 		}
- 
+
 		.adv_list.top .item .img {
 			max-height: 120px;
 			height: 100%;
@@ -3098,6 +3098,45 @@ ul.tabs li.stretch {
 		left: 1px;
 		font-size: 14px;
 	}
+	.title-v3 .page-top.maxwidth-theme h1, .title-v4 .page-top.maxwidth-theme h1 {
+		padding: 15px 0;
+	}
+	.wrapper_inner.promo-page .promo-item .info {
+		margin: 0;
+		padding: 0 20px;
+	}
+	.wrapper_inner.promo-page .promo-item .info .active-date {
+		margin-top: 15px;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.wrapper_inner.promo-page .promo-item .info .button-group {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
+	.wrapper_inner.promo-page .promo-item .info h2, .wrapper_inner.insta-block h2 {
+		line-height: 32px;
+	}
+	.wrapper_inner.promo-page .promo-item .info .promo-link {
+		padding-top: 6px;
+	}
+	.wrapper_inner.insta-block {
+		padding: 15px 0px 50px;
+	}
+	.wrapper_inner.insta-block h2 {
+		padding: 0 20px;
+	}
+	.wrapper_inner.insta-block .insta-info {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.wrapper_inner.insta-block .swiper-slide:first-child {
+		margin-left: 40px;
+	}
+	.wrapper_inner.insta-block .swiper-slide:last-child {
+		margin-right: 40px;
+	}
 }
 
 @media (max-width:768px) {
@@ -3112,6 +3151,12 @@ ul.tabs li.stretch {
 	}
 	.adv-slider-mobile .swiper-slide:last-child {
 		margin-right: 15px;
+	}
+	.wrapper_inner.promo-page .promo-item {
+		flex-direction: column;
+	}
+	.wrapper_inner.promo-page .promo-item .promo-image img {
+		max-width: 100%;
 	}
 }
 

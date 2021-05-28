@@ -1,6 +1,6 @@
 /* 15px/24px Open Sans (Default) */
-body{font: 15px/24px "Open Sans", Arial, sans-serif;}
-.tooltip{font-family: "Open Sans", Arial, sans-serif;}
+body{font: 14px/22px "Montserrat", Arial, sans-serif;}
+.tooltip{font-family: "Montserrat", Arial, sans-serif;}
 
 .logo_and_menu-row .personal-link .title{font-size:13px;}
 .logo-row .top-description .js_city_chooser{font-size:14px;}

@@ -3,6 +3,7 @@
 <? if ($arResult['ITEMS']) : ?>
 	<div class="wrapper_inner insta-block">
 		<h2>Акции в нашем Instagram</h2>
+		<p class="insta-info">Подпишитесь на наш <a href="https://www.instagram.com/restoranica.ru/">Instagram</a> и участвуйте в розыгрышах подарков, получайте дополнительные скидки и бонусы за активность, бесплатное сервисное обслуживание, кэшбек за покупку и многое другое!</p>
 		<!-- <a href="https://www.instagram.com/restoranica.ru/">Перейти в аккаунт</a> -->
 		<div class="row swiper-container insta-block-wrapper">
 			<div class="swiper-wrapper">
@@ -54,6 +55,6 @@
 				</li>
 			</ul>
 		</div>
-		<p>Подпишитесь на наш Instagram и участвуйте в розыгрышах подарков, получайте дополнительные скидки и бонусы за активность, бесплатное сервисное обслуживание, кэшбек за покупку и многое другое!</p>
+
 	</div>
 <? endif; ?>

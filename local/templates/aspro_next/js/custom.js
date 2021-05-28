@@ -461,7 +461,7 @@ $(document).ready(function () {
 				loadPrevNext: true,
 			},
 			slidesPerView: 1.3,
-			spaceBetween: 15,
+			spaceBetween: 20,
 			freeMode: true,
 			breakpoints: {
 				640: {
@@ -475,7 +475,7 @@ $(document).ready(function () {
 				1025: {
 					slidesPerView: 4.3,
 					slidesPerGroup: 4.3,
-					spaceBetween: 20,
+					spaceBetween: 25,
 					freeMode: false,
 					speed: 700
 				},
