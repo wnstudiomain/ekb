@@ -440,7 +440,7 @@ $(document).ready(function () {
 			lazy: {
 				loadPrevNext: true,
 			},
-			slidesPerView: 1.3,
+			slidesPerView: 'auto',
 			spaceBetween: 15,
 			freeMode: true,
 			breakpoints: {
@@ -460,7 +460,7 @@ $(document).ready(function () {
 			lazy: {
 				loadPrevNext: true,
 			},
-			slidesPerView: 1.3,
+			slidesPerView: 'auto',
 			spaceBetween: 20,
 			freeMode: true,
 			breakpoints: {

@@ -17,6 +17,7 @@ html, body {
     background-color: transparent;
     -moz-osx-font-smoothing: grayscale;
     -webkit-overflow-scrolling: touch;
+	font-weight: 400;
 }
 
 header,
@@ -511,7 +512,8 @@ div.blog-comment-hidden .blog-comment-date {
 }
 
 .wrapper_inner1.wides.float_banners {
-	margin: 0px 0px 30px;
+	margin: 60px 0px 30px;
+	display: block;
 }
 
 .opacity1 {
@@ -10152,6 +10154,7 @@ body .flex-direction-nav li {
 /* Start page float banners block */
 .start_promo {
 	width: 100%;
+	margin-top: 35px !important;
 }
 
 .start_promo .item {
@@ -10700,7 +10703,7 @@ body .flex-direction-nav li {
 
 .specials_slider_wrapp ul.tabs>li span,
 .tab_slider_wrapp ul.tabs>li span {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 20px;
 	text-transform: none;
 	border-bottom-width: 0px;
@@ -10754,7 +10757,7 @@ body .container .bottom_slider.tab_slider_wrapp .tabs>li {
 .tab_slider_wrapp ul.tabs li.cur span {
 	border: none;
 	font-weight: 600;
-	font-size: 1.6em;
+	font-size: 1.866em;
 	line-height: 24px;
 }
 
@@ -14906,6 +14909,8 @@ div.item-title {
 	-webkit-line-clamp: 50;
 	-webkit-box-orient: vertical;
 	white-space: normal;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 div.item-title a,
