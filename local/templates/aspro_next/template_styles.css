@@ -516,6 +516,11 @@ div.blog-comment-hidden .blog-comment-date {
 	display: block;
 }
 
+.wrapper_inner1.wides.float_banners h2 {
+	font-weight: 700;
+    font-size: 1.65em;
+}
+
 .opacity1 {
 	opacity: 1 !important;
 }
