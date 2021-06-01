@@ -1,8 +1,8 @@
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Акции");
-$APPLICATION->SetPageProperty("keywords", "Акции");
-$APPLICATION->SetPageProperty("title", "Акции");
-$APPLICATION->SetTitle("Акции"); ?>
+$APPLICATION->SetPageProperty("description", "Акции месяца");
+$APPLICATION->SetPageProperty("keywords", "Акции месяца");
+$APPLICATION->SetPageProperty("title", "Акции месяца");
+$APPLICATION->SetTitle("Акции месяца"); ?>
 <? $APPLICATION->IncludeComponent(
 	"aspro:com.banners.next",
 	"actions",

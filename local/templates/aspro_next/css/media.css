@@ -1490,6 +1490,16 @@ ul.tabs li.stretch {
 			padding: 20px 0px 0px;
 			clear: both;
 		}
+		.wrapper_inner1.wides.float_banners h2 {
+			font-weight: 600;
+    		font-size: 1.5em;
+		}
+		body .prices .price_matrix_block .price_matrix_wrapper {
+			display: flex;
+			flex-direction: column;
+			height: 50px;
+			align-items: center;
+		}
 	}
 	@media (max-width:767px) {
 		.catalog_detail .item_main_info .right_info .info_item {
@@ -1583,9 +1593,6 @@ ul.tabs li.stretch {
 		}
 		.catalog .item_wrap:not(.touch):hover, .catalog .item_wrap.hover, .catalog .item_wrap.touch.hover {
 			box-shadow: 0px 0px 0px 1px #F2F2F2 inset;
-		}
-		body .catalog_block .prices .price_matrix_block {
-			padding-bottom: 13px;
 		}
 		body h1 {
 			font-weight: 700;

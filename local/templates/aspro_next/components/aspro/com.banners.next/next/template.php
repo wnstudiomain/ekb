@@ -61,7 +61,7 @@
 					$isUrl = (strlen($arItem["PROPERTIES"]["URL_STRING"]["VALUE"]) ? true : false);
 
 					?>
-					<? if ($arItem["DETAIL_PICTURE"]["SRC"] || $arItem["PREVIEW_PICTURE"]["SRC"]) : ?>
+					<? if (($arItem["DETAIL_PICTURE"]["SRC"] || $arItem["PREVIEW_PICTURE"]["SRC"]) && $arItem["PROPERTIES"]["MAIN_PAGE"]["VALUE_XML_ID"] == 'Y') : ?>
 						<div class="swiper-slide sm_<?= $k; ?> <?= ($isUrl ? "hover" : ""); ?> <?= ($arItem["PROPERTIES"]["BANNER_SIZE"]["VALUE_XML_ID"] ? $arItem["PROPERTIES"]["BANNER_SIZE"]["VALUE_XML_ID"] : "normal"); ?>" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
 							<? $arItem["FORMAT_NAME"] = strip_tags($arItem["~NAME"]); ?>
 							<? if ($isUrl) { ?>

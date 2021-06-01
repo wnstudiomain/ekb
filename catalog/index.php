@@ -447,7 +447,7 @@ $APPLICATION->IncludeComponent(
 		"USE_BIG_DATA" => "Y",
 		"BIG_DATA_RCM_TYPE" => "personal",
 		"SHOW_DISCOUNT_PERCENT" => "N",
-		"SHOW_OLD_PRICE" => "N",
+		"SHOW_OLD_PRICE" => "Y",
 		"VIEWED_ELEMENT_COUNT" => "20",
 		"VIEWED_BLOCK_TITLE" => "Ранее вы смотрели",
 		"ELEMENT_SORT_FIELD_BOX" => "name",

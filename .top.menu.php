@@ -36,11 +36,11 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Акции", 
+		"Акции месяца", 
 		"/actions/", 
 		Array(), 
 		Array(), 
 		"" 
 	)
-); 
+);
 ?>

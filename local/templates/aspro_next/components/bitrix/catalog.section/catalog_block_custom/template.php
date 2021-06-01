@@ -307,7 +307,6 @@
 										else
 										{?>
 								<div class="price_matrix_wrapper ">
-
 									<?$arCountPricesCanAccess = 0;?>
 									<?$min_price_id=0;?>
 									<?\Aspro\Functions\CAsproItem::showItemPrices($arParams, $arItem["PRICES"],$minQuantity, $strMeasure, $min_price_id, 'Y');?>
