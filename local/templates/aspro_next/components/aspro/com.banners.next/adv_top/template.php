@@ -5,8 +5,7 @@
 		<? foreach ($arResult['ITEMS'] as $arItem) {
 			$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_EDIT'));
 			$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_DELETE'), array('CONFIRM' => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
-			$bUrl = (isset($arItem['DISPLAY_PROPERTIES']['URL']) && $arItem['DISPLAY_PROPERTIES']['URL']['VALUE']);
-			$sUrl = ($bUrl ? $arItem['DISPLAY_PROPERTIES']['URL']['VALUE'] : '');
+			$isUrl = (strlen($arItem["PROPERTIES"]["URL_STRING"]["VALUE"]) ? true : false);
 			$background = is_array($arItem["DETAIL_PICTURE"]) ? $arItem["DETAIL_PICTURE"]["SRC"] : $this->GetFolder() . "/images/background.jpg";
 			$mobileItem = CFile::GetPath($arItem["PROPERTIES"]["MOBILE_IMAGE"]["VALUE"]);
 			$mobileImage = is_array($arItem["PROPERTIES"]["MOBILE_IMAGE"]) ? $mobileItem : $arItem["DETAIL_PICTURE"]["SRC"];
@@ -16,8 +15,8 @@
 					<? if (is_array($arItem['DETAIL_PICTURE']) || is_array($arItem["PROPERTIES"]["MOBILE_IMAGE"])) : ?>
 						<div class="img">
 							<div class="img_inner">
-								<? if ($sUrl) : ?>
-									<a href="<?= $sUrl; ?>">
+								<? if ($isUrl) : ?>
+									<a href="<?= $arItem["PROPERTIES"]["URL_STRING"]["VALUE"] ?>">
 										<picture>
 											<source media="(max-width: 650px)" srcset="<?= $mobileImage ?>" alt="<?= ($arItem['DETAIL_PICTURE']['ALT'] ? $arItem['DETAIL_PICTURE']['ALT'] : $arItem['NAME']); ?>" title="<?= ($arItem['DETAIL_PICTURE']['TITLE'] ? $arItem['DETAIL_PICTURE']['TITLE'] : $arItem['NAME']); ?>">
 											<img src="<?= $background ?>">
@@ -32,7 +31,7 @@
 							</div>
 						</div>
 					<? endif; ?>
-				</div>
+				</div> 
 			</div>
 		<? } ?>
 	</div>
