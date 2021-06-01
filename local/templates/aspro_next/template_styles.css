@@ -11507,9 +11507,9 @@ html:not(.bx-touch) .item_slider .like_icons .compare_item.added:hover i:before 
 .cost.prices .price,
 .module-cart .row_titles .item_title,
 .module-cart .row_values .price {
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 15px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
 }
 
 .cost.prices .price.new-price {
