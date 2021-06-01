@@ -42,5 +42,5 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	)
-);
+); 
 ?>
