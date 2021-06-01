@@ -219,7 +219,7 @@ ul.tabs li span, .front_slider_wrapp .extended_pagination span, a, a span { -web
 .catalog_item .item-title a, .view-item .item-title a span, .articles-list .item .item-title a, .jobs_wrapp .item  .name a, .front_slider .item-title a span, .item-title a span, .item-title a { -webkit-transition: color ease-out 0.02s; -moz-transition: color ease-out 0.02s; -o-transition: color ease-out 0.02s; transition: color ease-out 0.02s; }
 .button22, .button22 span, .popup .soc-avt .row a, #header .catalog_menu ul.menu > li > a, #header ul.menu.adaptive > li  > a, #header ul.menu.full.opened > li  > a { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; }
 .view-item .item-title a  { text-decoration: none; }
-.catalog_item .item-title a, .catalog_item .item-title a span, .view-item .item-title a span { font-size: 14px;font-weight:bold; }
+.catalog_item .item-title a, .catalog_item .item-title a span, .view-item .item-title a span { font-size: 14px;font-weight: 400; }
 .catalog_item .price, .view-list .price{ font-size: 18px; /*margin-top: 8px;*/ display:inline-block; white-space:nowrap; }
 .catalog_item .price.discount, .view-list .price.discount{ margin-top: 0; float: none; }
 .differences_table .catalog_item .price.discount{ margin-top: 5px; }
