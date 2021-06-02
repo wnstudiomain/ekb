@@ -18676,6 +18676,9 @@ body .bx_catalog_item_scu .bx_item_detail_scu ul li:hover .cnt1.nf {
 	padding-bottom: 5px;
 }
 
+.stickers .sticker_vygodnaya_tsena {
+	display: none;
+}
 .video_table td:nth-of-type(1) {
 	padding-right: 5px;
 }

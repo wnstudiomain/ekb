@@ -64,7 +64,7 @@ if(!class_exists("CAsproItem"))
 						<?endif;?>
 						<div class="price_matrix_wrapper <?=($arDiscountPrices ? (isset($arDiscountPrices[$arPriceGroup['ID']]) ? 'strike_block' : '') : '');?>">
 							<?if($arPrice["VALUE"] > $arPrice["DISCOUNT_VALUE"]){?>
-								<div class="price asd"  data-currency="<?=$arPrice["CURRENCY"];?>" data-value="<?=$arPrice["DISCOUNT_VALUE"];?>" <?=($bMinPrice ? ' itemprop="offers" itemscope itemtype="http://schema.org/Offer"' : '')?>>
+								<div class="price new-price"  data-currency="<?=$arPrice["CURRENCY"];?>" data-value="<?=$arPrice["DISCOUNT_VALUE"];?>" <?=($bMinPrice ? ' itemprop="offers" itemscope itemtype="http://schema.org/Offer"' : '')?>>
 									<?if($bMinPrice):?>
 										<meta itemprop="price" content="<?=($arPrice['DISCOUNT_VALUE'] ? $arPrice['DISCOUNT_VALUE'] : $arPrice['VALUE'])?>" />
 										<meta itemprop="priceCurrency" content="<?=$arPrice['CURRENCY']?>" />
@@ -84,6 +84,11 @@ if(!class_exists("CAsproItem"))
 								<?if($arParams["SHOW_OLD_PRICE"]=="Y"):?>
 									<div class="price discount" data-currency="<?=$arPrice["CURRENCY"];?>" data-value="<?=$arPrice["VALUE"];?>">
 										<span class="values_wrapper"><?=self::getCurrentPrice("VALUE", $arPrice, $minQuantity);?></span>
+										<?if (($arParams["SHOW_MEASURE"]=="Y") && $strMeasure && ($minQuantity > 1)):?>
+										<span class="price_measure">/<?=$minQuantity?> <?=$strMeasure?></span>
+										<?else:?>
+										<span class="price_measure">/<?=$strMeasure?></span>
+										<?endif;?>
 									</div>
 								<?endif;?>
 								<?if($arParams["SHOW_DISCOUNT_PERCENT"]=="Y"){?>

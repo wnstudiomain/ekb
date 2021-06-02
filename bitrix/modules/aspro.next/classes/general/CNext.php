@@ -2648,7 +2648,7 @@ class CNext{
 									</div>
 								<?endif;?>
 								<?if($arPrice["PRICE"] > $arPrice["DISCOUNT_PRICE"]){?>
-									<div class="price" data-currency="<?=$arPrice["CURRENCY"];?>" data-value="<?=$arPrice["DISCOUNT_PRICE"];?>">
+									<div class="price new-price" data-currency="<?=$arPrice["CURRENCY"];?>" data-value="<?=$arPrice["DISCOUNT_PRICE"];?>">
 										<?if(strlen($arPrice["DISCOUNT_PRICE"])):?>
 											<span class="values_wrapper"><?=\Aspro\Functions\CAsproItem::getCurrentPrice("DISCOUNT_PRICE", $arPrice, $minQuantity);?></span>
 											<?if(($arParams["SHOW_MEASURE"]=="Y") && $strMeasure && $arPrice["PRICE"] && $minQuantity > 1):?>
