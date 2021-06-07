@@ -935,7 +935,8 @@ $arViewedData = array(
             <div class="delivery-block">
                 <h4>Доставка</h4>
 
-                <? $res = \Bitrix\Sale\Location\LocationTable::getList(array(
+                <?$only_point = $arResult["DISPLAY_PROPERTIES"]["ONLY_POINT"]["VALUE"];
+                $res = \Bitrix\Sale\Location\LocationTable::getList(array(
                 'filter' => array('=ID' => $location, '=NAME.LANGUAGE_ID' => LANGUAGE_ID),
                 'select' => array('NAME_RU' => 'NAME.NAME')
                 ));
@@ -944,6 +945,7 @@ $arViewedData = array(
                 $cityName = ($item['NAME_RU']);
                  }
                 ?>
+                <?= $only_point ?>
                 <div class="">
                     <div class="city-delivery__block">
                         <div>
@@ -989,7 +991,7 @@ $arViewedData = array(
                                 <div class="delivery-wrapper__description">
                                     <div>Доставка Курьером</div>
                                     <div class="courier-block__descp">
-                                        <div class="ekb-courier-text courier-block__calc">Бесплатно, при сумме общего заказа от 1000 руб.</div>
+                                        <div class="ekb-courier-text courier-block__calc">Бесплатно, при сумме общего заказа от 1500 руб.</div>
                                     </div>
                                 </div>
                             </div>
