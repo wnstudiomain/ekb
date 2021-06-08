@@ -6866,6 +6866,10 @@ body.fill_bg_y .header_wrap header .header-wrapper {
 	position: static;
 }
 
+.menu-row .menu-only .mega-menu table td.action_menu {
+	display: none;
+}
+
 .mega-menu table td.unvisible {
 	visibility: hidden;
 	opacity: 0;
