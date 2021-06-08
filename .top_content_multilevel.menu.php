@@ -29,10 +29,17 @@ $aMenuLinks = Array(
 		""
 	),
 	Array(
+		"Обжарка кофе",
+		"/services/restoranam-i-kofejnyam/obzharka-kofe/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
 		"Акции месяца",
 		"/actions/",
 		Array(),
-		Array(),
+		Array("NOT_VISIBLE"=>"Y", "CLASS"=>"action_menu"),
 		""
 	)
 );

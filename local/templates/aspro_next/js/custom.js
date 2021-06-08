@@ -473,8 +473,8 @@ $(document).ready(function () {
 					spaceBetween: 20,
 				},
 				1025: {
-					slidesPerView: 4.3,
-					slidesPerGroup: 4.3,
+					slidesPerView: 6.2,
+					slidesPerGroup: 6.2,
 					spaceBetween: 25,
 					freeMode: false,
 					speed: 700

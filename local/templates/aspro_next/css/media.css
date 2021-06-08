@@ -1505,6 +1505,28 @@ ul.tabs li.stretch {
 		.catalog_detail .item_main_info .right_info .info_item {
 			padding: 0 20px;
 		}
+		#mobilemenu .contacts .svg-email, #mobilemenu .contacts .svg-inline-email {
+			top: 15px;
+		}
+		#mobilemenu .social-icons li>a .svg {
+			width: 22px;
+    		min-width: 22px;
+    	 	height: 22px;
+   			min-height: 22px;
+		}
+		#mobilemenu .menu.middle a .svg-phone, #mobilemenu .menu.middle a .svg-inline-phone {
+			width: 20px;
+			min-width: 20px;
+			height: 20px;
+			top: 20px;
+			left: 22px;
+		}
+		#mobilemenu .social-icons ul {
+			padding-top: 5px;
+		}
+		.svg-phone {
+			margin: 0;
+		}
 		select {
 			background-image: url("data:image/svg+xml;utf8,<svg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M9.84 2.54l-.327-.33a.543.543 0 00-.387-.16.543.543 0 00-.387.16L5.002 5.948l-3.74-3.74a.543.543 0 00-.387-.16.543.543 0 00-.387.16l-.328.327a.548.548 0 000 .774l4.454 4.47a.56.56 0 00.388.175h.002a.559.559 0 00.386-.175L9.84 3.32a.552.552 0 000-.78z' fill='#000'/></svg>");
 			background-repeat: no-repeat;

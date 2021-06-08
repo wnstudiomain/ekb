@@ -581,7 +581,7 @@ h4.hover,
 .button.white_bg,
 .item .child_container .child_wrapp .menu_item.current a,
 .item .child_container .child_wrapp .menu_item:hover a {
-  color: #7b3f00;
+  color: #4e2411;
 }
 button.button,
 input.button,
@@ -649,11 +649,11 @@ h4:hover .opener_icon,
 .faq.list .item .q:hover .opener_icon,
 .jobs_wrapp .item .name tr:hover .opener_icon {
   color: #FFF;
-  background: #7b3f00;
+  background: #5e2c14;
 }
 .bigs .flex-direction-nav li {
   color: #FFF;
-  background: #7b3f00;
+  background: #5e2c14;
 }
 .btn.btn-default {
   background-color: #622e16;
