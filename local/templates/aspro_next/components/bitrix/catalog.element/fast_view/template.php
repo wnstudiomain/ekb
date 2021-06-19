@@ -253,7 +253,7 @@ setViewedProduct(<?=$arResult['ID']?>, <?=CUtil::PhpToJSObject($arViewedData, fa
 				<div class="cost prices clearfix">
 					<?if ($arResult["MIN_PRICE"]["DISCOUNT_VALUE"] != $arResult["MIN_PRICE"]["VALUE"]) :?>
                     <div class="sale_percent">
-                        <?$percentSale = 100 - round(($arResult["MIN_PRICE"]["DISCOUNT_VALUE"]/$arResult["MIN_PRICE"]["VALUE"])*100, 2) ?>
+                        <?$percentSale = 100 - round(($arResult["MIN_PRICE"]["DISCOUNT_VALUE"]/$arResult["MIN_PRICE"]["VALUE"])*100) ?>
                         <span> − <?=$percentSale?>%</span>
                     </div>
 					<?endif;?>

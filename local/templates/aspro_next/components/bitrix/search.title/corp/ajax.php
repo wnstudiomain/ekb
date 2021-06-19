@@ -30,7 +30,7 @@
 								<div class="title-search-price">
 									<?if($arElement["MIN_PRICE"]){?>
 										<?if($arElement["MIN_PRICE"]["DISCOUNT_VALUE"] < $arElement["MIN_PRICE"]["VALUE"]):?>
-											<div class="price"><?=$arElement["MIN_PRICE"]["PRINT_DISCOUNT_VALUE"]?></div>
+											<div class="price new-price"><?=$arElement["MIN_PRICE"]["PRINT_DISCOUNT_VALUE"]?></div>
 											<div class="price discount">
 												<strike><?=$arElement["MIN_PRICE"]["PRINT_VALUE"]?></strike>
 											</div>
@@ -47,7 +47,7 @@
 													<?$new_price = $arElement['PROPERTY_MINIMAL_COUNT_GOODS_VALUE'] * $arPrice["DISCOUNT_VALUE"];?>
 													<?$old_price = $arElement['PROPERTY_MINIMAL_COUNT_GOODS_VALUE'] * $arPrice["VALUE"];?>
 													<?if($arPrice["DISCOUNT_VALUE"] < $arPrice["VALUE"]):?>
-													<div class="price"><?=$new_price?> руб./<span><?=$arElement['PROPERTY_MINIMAL_COUNT_GOODS_VALUE']?> гр.</span></div>
+													<div class="price new-price"><?=$new_price?> руб./<span><?=$arElement['PROPERTY_MINIMAL_COUNT_GOODS_VALUE']?> гр.</span></div>
 													<div class="price discount">
 														<strike><?=$old_price?> руб./<span><?=$arElement['PROPERTY_MINIMAL_COUNT_GOODS_VALUE']?> гр.</strike>
 													</div>
@@ -55,7 +55,7 @@
 													<div class="price"><?=$new_price?> руб./<span><?=$arElement['PROPERTY_MINIMAL_COUNT_GOODS_VALUE']?> гр.</div>
 													<?endif;?>
 												<?elseif($arPrice["DISCOUNT_VALUE"] < $arPrice["VALUE"]):?>
-													<div class="price"><?=$arPrice["PRINT_DISCOUNT_VALUE"]?></div>
+													<div class="price new-price"><?=$arPrice["PRINT_DISCOUNT_VALUE"]?></div>
 													<div class="price discount">
 														<strike><?=$arPrice["PRINT_VALUE"]?></strike>
 													</div>

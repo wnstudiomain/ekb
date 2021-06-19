@@ -93,7 +93,7 @@
 							</a>
                             <?if ($arItem["ITEM_PRICES"][0]["BASE_PRICE"] > $arItem["ITEM_PRICES"][0]["PRICE"]):?>
                                 <div class="sale_percent">
-                                    <?$percentSale = 100 - round(($arItem["ITEM_PRICES"][0]["PRICE"]/$arItem["ITEM_PRICES"][0]["BASE_PRICE"])*100, 2) ?>
+                                    <?$percentSale = 100 - round(($arItem["ITEM_PRICES"][0]["PRICE"]/$arItem["ITEM_PRICES"][0]["BASE_PRICE"])*100) ?>
                                     <span> − <?=$percentSale?>%</span>
                                 </div>
                             <?endif;?>

@@ -118,7 +118,7 @@ if($arResult['ITEMS']){?>
 									$fast_view_text = GetMessage('FAST_VIEW');?>
                                 <?if ($arItem["MIN_PRICE"]["VALUE"] > $arItem["MIN_PRICE"]["DISCOUNT_VALUE"]):?>
                                     <div class="sale_percent">
-                                <?$percentSale = 100 - round(($arItem["MIN_PRICE"]["DISCOUNT_VALUE"]/$arItem["MIN_PRICE"]["VALUE"])*100, 2) ?>
+                                <?$percentSale = 100 - round(($arItem["MIN_PRICE"]["DISCOUNT_VALUE"]/$arItem["MIN_PRICE"]["VALUE"])*100) ?>
                                 <span> − <?=$percentSale?>%</span>
                             </div>
                                 <?endif;?>

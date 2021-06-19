@@ -11571,6 +11571,7 @@ html:not(.bx-touch) .item_slider .like_icons .compare_item.added:hover i:before 
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 0px;
+	margin-left: 5px;
 	float: none;
 	font-size: 12px;
 	line-height: 15px;
@@ -11598,6 +11599,7 @@ html:not(.bx-touch) .item_slider .like_icons .compare_item.added:hover i:before 
 	line-height: 15px;
 	font-weight: normal;
 	color: #222;
+	text-decoration: none;
 }
 
 .display_list .cost.prices .price {

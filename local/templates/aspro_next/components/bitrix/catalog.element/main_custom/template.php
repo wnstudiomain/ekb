@@ -508,8 +508,8 @@ $arViewedData = array(
 
                             <?if($arResult['MIN_PRICE']['DISCOUNT_VALUE'] != $arResult['MIN_PRICE']['VALUE']):?>
                             <div>
-                                <div class="sale_percent">
-                                    <?$percentSale = 100 - round(($arResult["MIN_PRICE"]["DISCOUNT_VALUE"]/$arResult["MIN_PRICE"]["VALUE"])*100, 2) ?>
+                                <div class="sale_percent ds">
+                                    <?$percentSale = 100 - round(($arResult["MIN_PRICE"]["DISCOUNT_VALUE"]/$arResult["MIN_PRICE"]["VALUE"])*100) ?>
                                     <span> − <?=$percentSale?>%</span>
                                 </div>
                                 <div class="old-price">
@@ -537,7 +537,7 @@ $arViewedData = array(
                             <?if($arResult['MIN_PRICE']['DISCOUNT_VALUE'] != $arResult['MIN_PRICE']['VALUE']):?>
                             <div>
                                 <div class="sale_percent">
-                                    <?$percentSale = 100 - round(($arResult["MIN_PRICE"]["DISCOUNT_VALUE"]/$arResult["MIN_PRICE"]["VALUE"])*100, 2) ?>
+                                    <?$percentSale = 100 - round(($arResult["MIN_PRICE"]["DISCOUNT_VALUE"]/$arResult["MIN_PRICE"]["VALUE"])*100) ?>
                                     <span> − <?=$percentSale?>%</span>
                                 </div>
                                 <div class="old-price">
