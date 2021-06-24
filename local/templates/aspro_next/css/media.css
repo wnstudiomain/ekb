@@ -1494,7 +1494,7 @@ ul.tabs li.stretch {
 			font-weight: 600;
     		font-size: 1.5em;
 		}
-		body .prices .price_matrix_block .price_matrix_wrapper {
+		body .prices .price_matrix_block .price_matrix_wrapper, body .prices .with_matrix {
 			display: flex;
 			flex-direction: column;
 			height: 50px;
