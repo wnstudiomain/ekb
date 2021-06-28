@@ -118,7 +118,7 @@ $APPLICATION->SetTitle("Оформление заказа");
 		"USE_ENHANCED_ECOMMERCE" => "N",
 		"SHOW_COUPONS" => "Y",
 		"EMPTY_BASKET_HINT_PATH" => "/",
-		"HIDE_ORDER_DESCRIPTION" => "Y",
+		"HIDE_ORDER_DESCRIPTION" => "N",
 		"MESS_PRICE_FREE" => "бесплатно",
 		"MESS_ECONOMY" => "Экономия",
 		"MESS_REGISTRATION_REFERENCE" => "Если вы впервые на сайте, и хотите, чтобы мы вас помнили и все ваши заказы сохранялись, заполните регистрационную форму.",
@@ -135,7 +135,7 @@ $APPLICATION->SetTitle("Оформление заказа");
 		"MESS_NEAREST_PICKUP_LIST" => "Ближайшие пункты:",
 		"MESS_SELECT_PICKUP" => "Выбрать",
 		"MESS_INNER_PS_BALANCE" => "На вашем пользовательском счете:",
-		"MESS_ORDER_DESC" => "Комментарии к заказу:"
+		"MESS_ORDER_DESC" => "Комментарий к заказу:"
 	),
 	false
 );?>

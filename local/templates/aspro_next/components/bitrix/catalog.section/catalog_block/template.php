@@ -347,7 +347,7 @@
 									<?endif;?>
 								<?}?>
 							</div>
-							<div class="footer_button">
+							<div class="footer_button  12312">
 								<div class="sku_props">
 									<?if($arItem["OFFERS"]){?>
 										<?if(!empty($arItem['OFFERS_PROP'])){?>

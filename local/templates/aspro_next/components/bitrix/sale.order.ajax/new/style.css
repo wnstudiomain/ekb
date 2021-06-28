@@ -932,6 +932,10 @@
     transition: background 200ms ease;
 }
 
+.comments-block {
+    margin-top: 10px;
+}
+
 .bx-sls  .quick-location-tag:hover,
 .bx-slst .quick-location-tag:hover {background-color: #e3f4f7;}
 .bx-sls  .quick-location-tag:first-child,
@@ -946,11 +950,13 @@
 .bx-soa .bx-soa-customer-label,
 .bx-soa .bx-soa-custom-label,
 .bx-soa .form-group label {
-    position: relative;
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 2px;
-    color: #000;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    color: #777777;
+    z-index: 1;
 }
 .bx-soa .bx-soa-customer-label-container small,
 .bx-soa .bx-soa-custom-label-container small,

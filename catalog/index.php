@@ -141,8 +141,6 @@ $APPLICATION->IncludeComponent(
 		"DISPLAY_ELEMENT_SELECT_BOX" => "N",
 		"PRICE_CODE" => array(
 			0 => "BASE",
-			1 => "ARENDA",
-			2 => "DILER",
 		),
 		"USE_PRICE_COUNT" => "N",
 		"SHOW_PRICE_COUNT" => "1",

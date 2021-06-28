@@ -6016,7 +6016,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 						props: {
 							className: 'bx-soa-pp-company-smalltitle'
 						},
-						html: "<div class='order-title'>" + item.NAME + "</div><div class='order-period'>" + periodDelivery + "</div><div class='order-description'>" + item.DESCRIPTION + "</div>",
+						html: "<div class='order-title'>" + item.NAME + "<div class='order-description'>" + item.DESCRIPTION + "</div>",
 					}));
 				}
 				else if (item.ID == 36) {
@@ -6027,7 +6027,23 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 						html: "<div class='order-title'>" + item.NAME + "</div><div class='order-period'>" + periodDelivery + "</div><div class='order-description' id='sdek-pvz'>" + item.DESCRIPTION + "</div>",
 					}));
 				}
+				else if (item.ID == 50) {
+					if ('CHECKED' in item) {
 
+						const prop7 = document.getElementById('soa-property-7');
+
+						if (prop7 !== null) {
+							prop7.readOnly = true;
+							prop7.style.backgroundColor = "rgb(238, 238, 238)";
+						}
+					}
+					labelNodes.push(BX.create('DIV', {
+						props: {
+							className: 'bx-soa-pp-company-smalltitle'
+						},
+						html: "<div class='order-title'>" + item.NAME + "</div><div class='order-period'>" + periodDelivery + "</div><div class='order-description'>" + item.DESCRIPTION + "</div>",
+					}));
+				}
 				else if (item.ID == 47) {
 					if ('CHECKED' in item) {
 
@@ -6035,6 +6051,8 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 
 						if (prop7 !== null) {
 							prop7.value = 'ПЭК (Самовывоз)';
+							prop7.readOnly = true;
+							prop7.style.backgroundColor = "rgb(238, 238, 238)";
 						}
 					}
 					labelNodes.push(BX.create('DIV', {
@@ -6045,15 +6063,15 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 					}));
 				}
 				else {
-					if ('CHECKED' in item && item.ID != 50) {
-
+					if ('CHECKED' in item) {
 						const prop7 = document.getElementById('soa-property-7');
 
-						if (prop7 !== null) {
-							prop7.value = '';
+							if (prop7 !== null) {
+								prop7.value = '';
+								prop7.readOnly = false;
+								prop7.style.backgroundColor = "#f7f7f7";
+							}
 						}
-					}
-
 					labelNodes.push(BX.create('DIV', {
 						props: {
 							className: 'bx-soa-pp-company-smalltitle'
@@ -6945,7 +6963,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 
 				this.editPropsItems(propsNode);
 				//showPropMap && this.editPropsMap(propsNode);
-				//this.editPropsComment(propsNode);
+				this.editPropsComment(propsNode);
 				propsContent.appendChild(propsNode);
 
 				if (this.propsBlockNode.getAttribute('data-visited') === 'true') {
@@ -8203,7 +8221,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 
 			propsCommentContainer = BX.create('DIV', {
 				props: {
-					className: 'col-sm-12'
+					className: 'col-sm-12 comments-block'
 				}
 			});
 			label = BX.create('LABEL', {
