@@ -365,7 +365,7 @@ function JCTitleSearch2(arParams)
 		this.RESULT.className = 'title-search-result '+this.arParams.INPUT_ID;
 		this.INPUT = document.getElementById(this.arParams.INPUT_ID);
 		this.startText = this.oldValue = this.INPUT.value;
-		BX.bind(this.INPUT, 'focus', function(e) {			
+		BX.bind(this.INPUT, 'focus', function(e) {
 			_this.onFocusGain()
 		});
 		BX.bind(this.INPUT, 'blur', function(e) {
@@ -389,7 +389,8 @@ function JCTitleSearch2(arParams)
 			this.WAIT.style.zIndex = '1100';
 		}
 
-		BX.bind(this.INPUT, 'bxchange', function(e) {_this.onChange()});
+		 BX.bind(this.INPUT, 'bxchange', function(e) {_this.onChange()});
+
 	};
 	BX.ready(function (){_this.Init(arParams)});
 }

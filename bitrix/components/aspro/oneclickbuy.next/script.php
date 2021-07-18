@@ -624,7 +624,7 @@ else
 				$curPrice = roundEx($arBasketItem['PRICE'], SALE_VALUE_PRECISION) * DoubleVal($arBasketItem['QUANTITY']);
 				$orderPrice += $curPrice;
 				$orderList .= GetMessage('ITEM_NAME') . $arBasketItem['NAME']
-					. GetMessage('ITEM_PRICE') . str_replace('#', number_format($arBasketItem['PRICE'], $arCurrency["DECIMALS"], $arCurrency["DEC_POINT"], $currencyThousandsSep), $arCurrency['FORMAT_STRING'])
+					#. GetMessage('ITEM_PRICE') . str_replace('#', number_format($arBasketItem['PRICE'], $arCurrency["DECIMALS"], $arCurrency["DEC_POINT"], $currencyThousandsSep), $arCurrency['FORMAT_STRING'])
 					. GetMessage('ITEM_QTY') . intval($arBasketItem['QUANTITY'])
 					. GetMessage('ITEM_TOTAL') . str_replace('#', number_format($curPrice, $arCurrency["DECIMALS"], $arCurrency["DEC_POINT"], $currencyThousandsSep), $arCurrency['FORMAT_STRING']) . "\n";
 			}
