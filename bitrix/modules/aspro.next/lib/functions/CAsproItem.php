@@ -25,13 +25,8 @@ if(!class_exists("CAsproItem"))
 			$newPrice = floatval($arPrice[$price_field] * $minQuantity);
 
 			$format_value = \CCurrencyLang::CurrencyFormat($newPrice, $arPrice['CURRENCY'], true);
-			if(strpos($arPrice["PRINT_".$price_field], $format_value) !== false):
-			$val = str_replace($format_value, '<span class="price_value">'.$format_value.'</span><span class="price_currency">', $arPrice["PRINT_".$price_field].'</span>');
-			else:
-			$val = $format_value;
-			endif;
 
-			return $val;
+			return $format_value;
 			}
 
 		public static function showItemPrices($arParams = array(), $arPrices = array(), $minQuantity = '', $strMeasure = '', &$price_id = 0, $bShort = 'N'){

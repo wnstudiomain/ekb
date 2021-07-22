@@ -623,6 +623,11 @@ else
 			if($arBasketItem['CAN_BUY'] === 'Y'){
 				$curPrice = roundEx($arBasketItem['PRICE'], SALE_VALUE_PRECISION) * DoubleVal($arBasketItem['QUANTITY']);
 				$orderPrice += $curPrice;
+				$order_key = array(); 
+				foreach($arBasketItem as $key=>$val) {
+					array_push($order_key, $order_key);
+				}
+				$comma_separated = implode(",", $order_key);
 				$orderList .= GetMessage('ITEM_NAME') . $arBasketItem['NAME']
 					#. GetMessage('ITEM_PRICE') . str_replace('#', number_format($arBasketItem['PRICE'], $arCurrency["DECIMALS"], $arCurrency["DEC_POINT"], $currencyThousandsSep), $arCurrency['FORMAT_STRING'])
 					. GetMessage('ITEM_QTY') . intval($arBasketItem['QUANTITY'])
@@ -638,7 +643,7 @@ else
 			"CLIENT_NAME" => ($_POST['ONE_CLICK_BUY']['FIO'] ? $_POST['ONE_CLICK_BUY']['FIO'] : $_POST['ONE_CLICK_BUY']['CONTACT_PERSON']),
 			"ACCOUNT_NUMBER" => $arOrderQuery["ACCOUNT_NUMBER"],
 			"PHONE" => $_POST["ONE_CLICK_BUY"]["PHONE"],
-			"ORDER_ITEMS" => $orderList,
+			"ORDER_ITEMS" => $comma_separated,
 			"ORDER_PRICE" => str_replace('#', number_format(($arOrderQuery["PRICE"] ? $arOrderQuery["PRICE"] : $orderPrice), $arCurrency["DECIMALS"], $arCurrency["DEC_POINT"], $currencyThousandsSep), $arCurrency['FORMAT_STRING']),
 			"COMMENT" => $_POST['ONE_CLICK_BUY']['COMMENT'],
 			"RS_DATE_CREATE" => ConvertTimeStamp(false, "FULL"),
