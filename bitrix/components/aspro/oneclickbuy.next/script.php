@@ -643,7 +643,7 @@ else
 			"CLIENT_NAME" => ($_POST['ONE_CLICK_BUY']['FIO'] ? $_POST['ONE_CLICK_BUY']['FIO'] : $_POST['ONE_CLICK_BUY']['CONTACT_PERSON']),
 			"ACCOUNT_NUMBER" => $arOrderQuery["ACCOUNT_NUMBER"],
 			"PHONE" => $_POST["ONE_CLICK_BUY"]["PHONE"],
-			"ORDER_ITEMS" => $comma_separated,
+			"ORDER_ITEMS" => $orderList,
 			"ORDER_PRICE" => str_replace('#', number_format(($arOrderQuery["PRICE"] ? $arOrderQuery["PRICE"] : $orderPrice), $arCurrency["DECIMALS"], $arCurrency["DEC_POINT"], $currencyThousandsSep), $arCurrency['FORMAT_STRING']),
 			"COMMENT" => $_POST['ONE_CLICK_BUY']['COMMENT'],
 			"RS_DATE_CREATE" => ConvertTimeStamp(false, "FULL"),
