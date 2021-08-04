@@ -10635,6 +10635,7 @@ body .flex-direction-nav li {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: block;
+	font-weight: 400;
 }
 
 .sections_wrapper .list .item.section_item {
@@ -14863,7 +14864,7 @@ body .title-v4.wrapper1 header .header-wrapper>.wrapper_inner {
 	overflow: visible;
 }
 
-#content .right_block .inner_wrapper {
+#content .right_block .inner_wrapper, #content .section_block {
 	position: relative;
 	zoom: 1;
 	z-index: 2;
