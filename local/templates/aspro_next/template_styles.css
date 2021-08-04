@@ -14864,7 +14864,7 @@ body .title-v4.wrapper1 header .header-wrapper>.wrapper_inner {
 	overflow: visible;
 }
 
-#content .right_block .inner_wrapper, #content .section_block {
+#content .right_block .inner_wrapper, #content .section_block, #content .seo_block {
 	position: relative;
 	zoom: 1;
 	z-index: 2;
