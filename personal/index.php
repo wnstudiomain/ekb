@@ -47,6 +47,7 @@ else{
 		"PATH_TO_PAYMENT" => "/order/payment/",
 		"PER_PAGE" => "20",
 		"PROP_1" => array(
+			0 => "2",
 		),
 		"PROP_2" => array(
 		),
@@ -71,7 +72,7 @@ else{
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
 		"ORDER_HIDE_USER_INFO" => array(
-			0 => "0",
+			0 => "PERSON_TYPE_NAME",
 		),
 		"ORDER_RESTRICT_CHANGE_PAYSYSTEM" => array(
 			0 => "0",
@@ -82,6 +83,8 @@ else{
 		"ORDERS_PER_PAGE" => "20",
 		"PROFILES_PER_PAGE" => "20",
 		"MAIN_CHAIN_NAME" => "Мой кабинет",
+		"ORDER_REFRESH_PRICES" => "N",
+		"ORDER_DISALLOW_CANCEL" => "N",
 		"SEF_URL_TEMPLATES" => array(
 			"index" => "index.php",
 			"orders" => "orders/",

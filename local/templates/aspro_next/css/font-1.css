@@ -33,9 +33,6 @@ header.header-v8 .svg-search.white{top:-2px;}
 .title_block{font-size:21px;}
 .title_block.sm{font-size:19px;}
 
-/*filter*/
-.bx_filter_select_popup ul li label{font-family: "Open Sans", Arial, sans-serif;}
-
 /*basket*/
 .bx_ordercart .bx_ordercart_order_table_container .bx_ordercart_itemtitle,
 .bx_ordercart .bx_ordercart_order_table_container tbody td.price .current_price,
@@ -53,11 +50,11 @@ header.header-v8 .svg-search.white{top:-2px;}
 
 /*order*/
 body .bx-soa-section-title{font-size:22px;}
-#bx-soa-order .bx-sls .bx-ui-sls-fake, #bx-soa-order .bx-sls .bx-ui-sls-route{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
+#bx-soa-order .bx-sls .bx-ui-sls-fake, #bx-soa-order .bx-sls .bx-ui-sls-route{font-family: "Montserrat", Arial, sans-serif;}
 .personal_wrapper .orders_wrapper .sale-order-list-button, .personal_wrapper .orders_wrapper .sale-order-detail-about-order-inner-container-repeat > a, .sale-order-detail-payment-options-methods-button-element, .sale-order-detail-payment-options-methods-button-element-new-window{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
 .personal_wrapper .orders_wrapper .row.col-md-12.col-sm-12 > a,
 .sale-order-list-accomplished-date, .sale-order-list-accomplished-date-number,
 .personal_wrapper .orders_wrapper .sale-order-title,
 .personal_wrapper .orders_wrapper .sale-order-list-container .sale-order-list-accomplished-title, .personal_wrapper .orders_wrapper .sale-order-list-container .sale-order-list-title, .personal_wrapper .orders_wrapper .sale-order-detail-general-item,
 .personal_wrapper .orders_wrapper .sale-order-list-inner-row > div > a, .personal_wrapper .sale-personal-account-wallet-container .sale-personal-account-wallet-title,
-.btn.sale-account-pay-button, .bx-sls .bx-ui-sls-fake, .bx-sls .bx-ui-sls-route{font-family: "Open Sans", Arial, Helvetica, sans-serif;}
+.btn.sale-account-pay-button, .bx-sls .bx-ui-sls-fake, .bx-sls .bx-ui-sls-route{font-family: "Montserrat", Arial, sans-serif;}

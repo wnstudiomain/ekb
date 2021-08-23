@@ -10622,7 +10622,7 @@ body .flex-direction-nav li {
 
 .sections_wrapper .list .item .img img {
 	max-width: 100%;
-	max-height: 100%; 
+	max-height: 100%;
 }
 
 .sections_wrapper .list .item .name {
@@ -15248,6 +15248,10 @@ body .catalog_section_list .item_block {
 
 .articles-list .item .left-data a img {
 	vertical-align: middle;
+}
+
+.sale-order-detail-total-payment-list-left-item, .sale-order-detail-total-payment-list-right-item {
+	font: 14px/22px "Montserrat", Arial, sans-serif;
 }
 
 .articles-list .item-title a span {
@@ -30223,7 +30227,6 @@ body .ymaps-2-1-50-listbox__button-icon.ymaps-2-1-50-_icon_layers {
 }
 
 .personal_wrapper .row div.sale-order-detail-payment-inner-row-template {
-	margin-left: 16.66666667%;
 	padding-left: 5px;
 }
 
@@ -30526,7 +30529,7 @@ body .sale-order-history-link {
 
 .personal_wrapper .orders_wrapper div.sale-order-detail-payment-options-methods,
 .personal_wrapper .orders_wrapper div.sale-order-detail-payment-options-shipment {
-	padding: 25px 0 26px 0;
+	padding: 35px 0 36px 0;
 }
 
 .personal_wrapper .orders_wrapper .row ul li:before {
@@ -30633,14 +30636,17 @@ body .sale-order-history-link {
 .bx_my_order_cancel a:hover {
 	color: #333;
 }
-
-.personal_wrapper .orders_wrapper .sale-order-detail-back-to-list-link-up,
-.personal_wrapper .orders_wrapper .sale-order-detail-back-to-list-link-down {
-	font-weight: bold;
+.personal_wrapper .orders_wrapper .sale-order-detail-back-to-list-link-up {
+	margin-bottom: 10px;
 }
 
+.personal_wrapper .orders_wrapper .sale-order-detail-back-to-list-link-down {
+	margin-top: 10px;
+	display: block;
+}
 .personal_wrapper .orders_wrapper .sale-order-detail-general {
 	border: 1px solid #f2f2f2;
+	margin-bottom: 30px;
 }
 
 .personal_wrapper .orders_wrapper .sale-order-detail-general-head {
@@ -30649,7 +30655,7 @@ body .sale-order-history-link {
 
 .personal_wrapper .orders_wrapper .sale-order-detail-about-order {
 	margin-top: 0px;
-	padding: 0px 7px;
+	padding: 10px 7px 17px;
 }
 
 .personal_wrapper .orders_wrapper .sale-order-detail-about-order-container .sale-order-detail-about-order-title {
@@ -30666,8 +30672,8 @@ body .sale-order-history-link {
 .sale-order-detail-general-item {
 	color: #333333;
 	font-size: 16px;
-	font-weight: bold;
-	font-family: Ubuntu, Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-family: "Montserrat", Arial, sans-serif;
 	margin-left: 6px;
 }
 
@@ -30682,7 +30688,7 @@ body .sale-order-history-link {
 .sale-order-detail-about-order-inner-container-price-title {
 	font-size: 14px;
 	color: #888888;
-	font-family: Ubuntu, Arial, Helvetica, sans-serif;
+	font-family: "Montserrat", Arial, sans-serif;
 }
 
 .personal_wrapper .orders_wrapper .sale-order-detail-about-order-inner-container-name-detail,
@@ -30691,7 +30697,6 @@ body .sale-order-history-link {
 	font-size: 15px;
 	color: #333333;
 	font-weight: 400;
-	font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 
 .sale-order-detail-about-order-inner-container-price-detail {
@@ -30700,12 +30705,17 @@ body .sale-order-history-link {
 
 .sale-order-detail-about-order-inner-container-name-read-more,
 .sale-order-detail-about-order-inner-container-name-read-less {
-	font-weight: bold;
 	font-size: 13px;
 	text-decoration: none;
 	position: relative;
 	padding: 0px 25px 0px 0px;
 	border: none;
+	font-weight: 700;
+}
+
+.sale-order-detail-title-element {
+	font: 25px "Montserrat", Arial, sans-serif;
+	font-weight: 700;
 }
 
 .sale-order-detail-about-order-inner-container-name-read-more:after,
@@ -30748,15 +30758,6 @@ body .sale-order-history-link {
 	margin: 0px 0px 24px;
 }
 
-.sale-order-detail-about-order-inner-container-list-item,
-.sale-order-detail-about-order-inner-container-list-item-element,
-.sale-order-detail-about-order-inner-container-name-titile,
-.sale-order-detail-about-order-inner-container-status-title,
-.sale-order-detail-about-order-inner-container-price-title,
-.sale-order-detail-payment-options-shipment-composition-item-title,
-.sale-order-detail-payment-options-order-content-item-title {
-	font-family: Ubuntu, Arial, Helvetica, sans-serif;
-}
 
 .sale-order-detail-about-order-inner-container-list-item {
 	color: #888888;
@@ -30803,12 +30804,11 @@ body .sale-order-history-link {
 
 .personal_wrapper .orders_wrapper .sale-order-detail-payment-options-info .sale-order-detail-payment-options-info-container {
 	width: 100%;
-	padding: 3px 22px 0px !important;
+	padding: 10px 22px 10px !important;
 }
 
 .sale-order-detail-payment-options-info-order-number,
 .sale-order-detail-payment-options-info-total-price {
-	font-family: Ubuntu, Arial, Helvetica, sans-serif;
 	color: #383838;
 	font-weight: bold;
 }
@@ -30816,6 +30816,7 @@ body .sale-order-history-link {
 .sale-order-detail-payment-options-info-total-price {
 	color: #777777;
 	font-weight: 400;
+	margin-top: 7px;
 }
 
 .sale-order-detail-payment-options-info-total-price span {
@@ -30827,7 +30828,11 @@ body .sale-order-history-link {
 }
 
 .personal_wrapper div.payment-options-methods-row {
-	padding: 0px 7px 0px 22px;
+	padding: 0px 7px 0px 2px;
+}
+
+.personal_wrapper .sale-order-detail-payment-options-methods-shipment-list-item-title {
+	margin-bottom: 3px;
 }
 
 .sale-order-detail-payment-options-methods-container:before,
@@ -30846,7 +30851,7 @@ div.payment-options-methods-row:last-child:after {
 
 .sale-order-detail-payment-options-methods-image-element,
 .sale-order-detail-payment-options-shipment-image-element {
-	background-size: auto;
+	background-size: contain;
 	border: 1px solid #f2f2f2;
 }
 
@@ -30867,9 +30872,8 @@ div.payment-options-methods-row:last-child:after {
 }
 
 .sale-order-detail-payment-options-methods-info-total-price {
-	font-family: Ubuntu, Arial, Helvetica, sans-serif;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .sale-order-detail-payment-options-methods-info-total-price .sale-order-detail-sum-number {
@@ -30880,13 +30884,13 @@ div.payment-options-methods-row:last-child:after {
 .sale-order-detail-hide-link,
 .sale-order-detail-payment-options-methods-info-change-link {
 	border: none;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 13px;
 	text-decoration: none;
 	position: relative;
 	padding: 3px 25px 0px 0px;
 	display: inline-block;
-	margin: 6px 0px 0px;
+	margin: 15px 0px 0px;
 }
 
 .sale-order-detail-hide-link:after,
@@ -30937,7 +30941,8 @@ div.payment-options-methods-row:last-child:after {
 }
 
 .personal_wrapper .orders_wrapper .sale-order-detail-payment-options-shipment .sale-order-detail-payment-options-methods-shipment-list {
-	width: 66.66666667%;
+	width: 100%;
+	padding-left: 15px !important;
 }
 
 .personal_wrapper .orders_wrapper .sale-order-detail-payment-options-methods-shipment-list-item-link {
@@ -30983,6 +30988,10 @@ div.payment-options-methods-row:last-child:after {
 	vertical-align: middle;
 }
 
+.sale-order-detail-order-item-td {
+	border-top: 1px solid #f2f2f2;
+}
+
 .personal_wrapper .sale-order-detail-order-item-td-title {
 	color: #999999;
 	padding-bottom: 4px;
@@ -31025,6 +31034,26 @@ div.payment-options-methods-row:last-child:after {
 	text-align: center;
 }
 
+.sale-order-detail-order-item-td-text .bx-price {
+	font-weight: 700;
+	color: #333333;
+}
+
+.sale-order-detail-order-item-td-text .bx-price.old-price {
+	text-decoration: line-through;
+	font-weight: 400;
+	font-size: 13px;
+	color: #f91155;
+}
+
+.sale-order-detail-order-item-td-text .bx-price.old-price > span {
+	color: #333333;
+}
+
+.sale-order-detail-order-item-td-text .bx-price.new-price {
+	color: #f91155;
+}
+
 .personal_wrapper .sale-order-detail-payment-options-order-content .sale-order-detail-order-item-tr:last-of-type .sale-order-detail-order-item-td {
 	border-bottom: 1px solid #f2f2f2;
 }
@@ -31032,7 +31061,9 @@ div.payment-options-methods-row:last-child:after {
 .sale-order-detail-total-payment ul {
 	margin-bottom: 0px;
 }
-
+.sale-order-detail-title-element {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
 .personal_wrapper .sale-order-detail-total-payment-list-left-item,
 .personal_wrapper .sale-order-detail-total-payment-list-right-item {
 	color: #777777;
@@ -31040,6 +31071,7 @@ div.payment-options-methods-row:last-child:after {
 	/*font-family: Ubuntu, Arial, Helvetica, sans-serif;*/
 	font-weight: 400;
 	line-height: 20px;
+	margin-bottom: 6px;
 }
 
 .personal_wrapper .sale-order-detail-total-payment-list-left-item:last-of-type,

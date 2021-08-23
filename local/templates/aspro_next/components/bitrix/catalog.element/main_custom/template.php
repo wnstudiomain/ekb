@@ -826,11 +826,6 @@ $arViewedData = array(
 
             return $array;
 
-            //echo '1:<pre>';print_R( $deliveryPrice);echo '</pre>';
-            //echo '2:<pre>';print_R( $arPeriod);echo '</pre>';
-            //echo '3:<pre>';print_R( $arDeliveryParams);echo '</pre>';
-
-
         }
         $deliveryPriceForProduct = getDeliveryPriceForProduct(
             $arResult["ID"],
@@ -2436,9 +2431,7 @@ if(((in_array('PREVIEW_PICTURE', $arParams['OFFERS_FIELD_CODE']) || in_array('DE
         </div>
     </div>
 </div>
-
 <?endif;?>
-
 <script type="text/javascript">
     BX.message({
         QUANTITY_AVAILIABLE: '<? echo COption::GetOptionString("aspro.next", "EXPRESSION_FOR_EXISTS", GetMessage("EXPRESSION_FOR_EXISTS_DEFAULT"), SITE_ID); ?>',
