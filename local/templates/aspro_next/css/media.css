@@ -3212,6 +3212,7 @@ ul.tabs li.stretch {
 @media (max-width:768px) {
 	.adv-slider-mobile {
 		display: block;
+		overflow: hidden;
 	}
 	.start_promo_wraper_small, .start_promo_wraper_big {
 		display: none;
