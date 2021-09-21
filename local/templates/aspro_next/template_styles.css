@@ -10085,6 +10085,7 @@ body .flex-direction-nav li {
 	display: flex;
 	padding-top: 25px;
 	padding-bottom: 55px;
+	overflow-x: hidden;
 }
 
 .bigdata_recommended-swiper .swiper-wrapper {
