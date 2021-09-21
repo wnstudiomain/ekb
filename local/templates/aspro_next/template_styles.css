@@ -20604,7 +20604,11 @@ body .wrapper_inner.wide_page .info_item .middle_info .buy_block .wrapp_one_clic
 
 .catalog_detail .tabs_section {
 	margin: -10px 0px 0px;
-	position: relative
+	position: relative;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .catalog_detail .tabs_section .tabs-head li {
@@ -25630,8 +25634,19 @@ body .wrapper .button {
 	padding: 0px 0px 25px;
 }
 
+.detail.services {
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
 .group_description_block.bottom {
 	padding: 20px 0px 20px;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 ul.slider_navigation.top_big .flex-direction-nav {
