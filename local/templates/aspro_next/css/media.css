@@ -1576,15 +1576,22 @@ ul.tabs li.stretch {
 		#mobileheader .logo img {
 			max-width: 120px;
 		}
+		.right_block1.catalog.vertical {
+			overflow: hidden;
+		}
+		.js_filter .bx_filter.bx_filter_vertical {
+			height: auto;
+		}
 		.js_filter.filter_horizontal {
 			position: fixed;
 			top: 63px;
 			left: 0;
 			right: 0;
+			height: auto;
 			bottom: 0;
+			display: none;
 			background-color: #fff;
 			width: 100%;
-			height: auto;
 			overflow-y: scroll;
 		}
 		body .wrapper1.mfixed_Y>div#mobileheader.static {
@@ -1597,6 +1604,7 @@ ul.tabs li.stretch {
 		.js_filter.filter_horizontal.active {
 			z-index: 1000;
 			background-color: #f9f9f9;
+			display: block;
 		}
 		.catalog_page .middle>.container, .catalog_page .wrapper_inner, .middle:not(.menu) {
 			position: static
