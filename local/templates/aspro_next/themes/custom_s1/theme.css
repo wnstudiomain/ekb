@@ -3,7 +3,7 @@ a.scroll-to-top.RECT_COLOR {
   background-color: #622e16;
 }
 a.scroll-to-top.ROUND_COLOR:hover,
-a.scroll-to-top.RECT_COLOR:hover {
+a.scroll-to-top.RECT_COLOR:hover { 
   background-color: #634739;
 }
 ul li::before {
