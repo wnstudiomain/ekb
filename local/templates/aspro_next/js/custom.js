@@ -366,7 +366,7 @@ $(document).ready(function () {
 					if (courierArr.PRICE > 0 && val != 2201) {
 						courierDelivery.find('.courier-block__calc').html('<span id="courier-block__period">' + courierArr.PERIOD + '</span>, <span id="courier-block__price">' + newPriceCourier + '</span> руб.');
 					} else if (val == 2201) {
-						courierDelivery.find('.courier-block__calc').text('Бесплатно, при сумме общего заказа от 1000 руб.')
+						courierDelivery.find('.courier-block__calc').text('Бесплатно, при сумме общего заказа от 1500 руб.')
 					}
 					else {
 						courierDelivery.find('.pickpoint-block__calc').html('Уточняйте у менеджеров');
