@@ -105,25 +105,27 @@ $arNotify = unserialize($notifyOption);
 				<div class="sa_block">
 					<?=$arQuantityData["HTML"];?>
 				</div>
-				<div class="cost prices clearfix">
-					<?if($arItem["OFFERS"]):?>
-						<?\Aspro\Functions\CAsproSku::showItemPrices($arParams, $arItem, $item_id, $min_price_id, array(), 'Y');?>
-					<?else:?>
-						<?
-						if(isset($arItem['PRICE_MATRIX']) && $arItem['PRICE_MATRIX']) // USE_PRICE_COUNT
-						{?>
-							<?if($arItem['ITEM_PRICE_MODE'] == 'Q' && count($arItem['PRICE_MATRIX']['ROWS']) > 1):?>
-								<?=CNext::showPriceRangeTop($arItem, $arParams, GetMessage("CATALOG_ECONOMY"));?>
-							<?endif;?>
-							<?=CNext::showPriceMatrix($arItem, $arParams, $strMeasure, $arAddToBasketData);?>
-						<?
-						}
-						elseif($arItem["PRICES"])
-						{?>
-							<?\Aspro\Functions\CAsproItem::showItemPrices($arParams, $arItem["PRICES"], $strMeasure, $min_price_id, 'Y');?>
-						<?}?>
-					<?endif;?>
-				</div>
+                <div class="cost prices clearfix">
+                    <?if( $arItem["OFFERS"]){?>
+                        <?\Aspro\Functions\CAsproSku::showItemPrices($arParams, $arItem, $item_id, $min_price_id, array(), 'Y');?>
+                    <?}else{?>
+                        <?if($arItem['PROPERTIES']['WEIGHTED_GOODS']['~VALUE']):?>
+                            <?$minQuantity = $arItem['PROPERTIES']['MINIMAL_COUNT_GOODS']['VALUE'];?>
+                        <?else:?>
+                            <?$minQuantity = 1 ?>
+                        <?endif;?>
+                        <?
+
+                        $item_id = $arItem["ID"];
+
+                        if($arItem["PRICES"])
+                        {
+                            $arCountPricesCanAccess = 0;
+                            $min_price_id=0;?>
+                            <?\Aspro\Functions\CAsproItem::showItemPrices($arParams, $arItem["PRICES"], $minQuantity, $strMeasure, $min_price_id, 'Y');?>
+                        <?}?>
+                    <?}?>
+                </div>
 			</div>
 
 			<div class="footer_button">
