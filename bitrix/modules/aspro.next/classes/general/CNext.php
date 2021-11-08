@@ -1581,7 +1581,8 @@ class CNext
 						}
 
 						if (strlen($arTheme['FAVICON_IMAGE']))
-							$APPLICATION->AddHeadString('<link rel="shortcut icon" href="' . $arTheme['FAVICON_IMAGE'] . '" type="image/x-icon" />', true);
+                            $href = explode("?", $arTheme['FAVICON_IMAGE']);
+							$APPLICATION->AddHeadString('<link rel="shortcut icon" href="' . $href[0] . '" type="image/x-icon" />', true);
 
 						if (strlen($arTheme['APPLE_TOUCH_ICON_IMAGE']))
 							$APPLICATION->AddHeadString('<link rel="apple-touch-icon" sizes="180x180" href="' . $arTheme['APPLE_TOUCH_ICON_IMAGE'] . '" />', true);
