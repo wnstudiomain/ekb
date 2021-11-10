@@ -9411,6 +9411,12 @@ body .basket_wrapp {
 	vertical-align: top;
 }
 
+.schemes_link {
+	background-image: url(/upload/pdf-doc.png);
+	padding-left: 25px;
+	background-repeat: no-repeat;
+}
+
 /*bottom basket*/
 .basket_bottom_block {
 	position: fixed;
