@@ -1383,6 +1383,11 @@ if(strlen($arResult["SECTION_FULL"]["UF_VIDEO_YOUTUBE"])){
                             <a href="#recipes"><span>Технические характеристики</span></a>
                         </li>
                     <?endif;?>
+                    <?if($arResult['PROPERTIES']['SCHEMES']['VALUE']):?>
+                        <li class="<?=(!($iTab++) ? ' active' : '')?>">
+                            <a href="#schemes"><span>Схемы и деталировки</span></a>
+                        </li>
+                    <?endif;?>
                     <?if($arParams["USE_REVIEW"] == "Y"):?>
                     <li class="<?=(!($iTab++) ? ' active' : '')?>">
                         <a href="#review"><span><?=($arParams["TAB_REVIEW_NAME"] ? $arParams["TAB_REVIEW_NAME"] : GetMessage("REVIEW_TAB"))?></span><span
@@ -2179,6 +2184,18 @@ if(((in_array('PREVIEW_PICTURE', $arParams['OFFERS_FIELD_CODE']) || in_array('DE
                         </div>
                         <div>
                             <?=htmlspecialcharsBack($arResult['PROPERTIES']['TEH_CHAR']['VALUE']['TEXT']);?>
+                        </div>
+                    </div>
+                <?endif;?>
+                <?if($arResult['PROPERTIES']['SCHEMES']['VALUE']):?>
+                    <hr>
+                    <div class="tab-pane additional_block" id="schemes">
+                        <h3 class="hidden-xs">Схемы и деталировки</h3>
+                        <div class="title-tab-heading visible-xs">
+                            Схемы и деталировки
+                        </div>
+                        <div>
+                            <?=htmlspecialcharsBack($arResult['PROPERTIES']['SCHEMES']['VALUE']['TEXT']);?>
                         </div>
                     </div>
                 <?endif;?>
