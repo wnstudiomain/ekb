@@ -1505,6 +1505,9 @@ ul.tabs li.stretch {
 		.catalog_detail .item_main_info .right_info .info_item {
 			padding: 0 20px;
 		}
+		.detail img {
+			height: auto;
+		}
 		#mobilemenu .contacts .svg-email, #mobilemenu .contacts .svg-inline-email {
 			top: 15px;
 		}
