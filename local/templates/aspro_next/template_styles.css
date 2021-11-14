@@ -6967,7 +6967,7 @@ body.fill_bg_y .header_wrap header .header-wrapper {
 
 .menu-row .mega-menu table td.wide_menu>.wrap>.dropdown-menu.visible {
 	position: absolute;
-	top: 64px;
+	top: 62px;
 	left: 0;
 	right: 0;
 	width: 100%;
@@ -10481,6 +10481,8 @@ body .flex-direction-nav li {
 	position: sticky;
 	top: 63px;
 	background-color: #fff;
+	display: flex;
+	justify-content: flex-start;
 	z-index: 2
 }
 

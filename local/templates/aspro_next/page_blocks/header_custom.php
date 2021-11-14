@@ -23,7 +23,7 @@ $logoClass = ($arTheme['COLORED_LOGO']['VALUE'] !== 'Y' ? '' : ' colored');
     <div class="maxwidth-theme">
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-9">
                 <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
                 array(
                     "COMPONENT_TEMPLATE" => ".default",
