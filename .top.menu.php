@@ -15,15 +15,15 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Покупателю", 
-		"/services/", 
+		"Оплата", 
+		"/help/payment/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Вакансии", 
-		"/company/vacancy/", 
+		"Доставка", 
+		"/help/delivery/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -31,6 +31,13 @@ $aMenuLinks = Array(
 	Array(
 		"Контакты", 
 		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Вакансии", 
+		"/company/vacancy/", 
 		Array(), 
 		Array(), 
 		"" 
