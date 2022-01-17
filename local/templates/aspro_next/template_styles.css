@@ -6936,6 +6936,10 @@ body.fill_bg_y .header_wrap header .header-wrapper {
 	box-shadow: none;
 }
 
+.table-menu table td.catalog.wide_menu>.wrap>.dropdown-menu.visible {
+	float: none;
+}
+
 .menu-row .mega-menu table td.dropdown>.wrap>.dropdown-menu.visible {
 	display: block;
 	opacity: 1
@@ -7003,8 +7007,13 @@ body.fill_bg_y .header_wrap header .header-wrapper {
 	display: block;
 	max-width: 1350px;
 	margin: 0 auto;
+	/* max-height: 90vh; */
 	padding: 0px 20px;
 	width: 100%;
+}
+
+.menu-row .navs .mega-menu table td.wide_menu>.wrap>.dropdown-menu>ul {
+	max-height: 90vh;
 }
 
 .menu-row .mega-menu table td.wide_menu:hover>.wrap>.dropdown-menu>ul>li>a,
@@ -7018,10 +7027,9 @@ body.fill_bg_y .header_wrap header .header-wrapper {
 
 .menu-row .mega-menu table td.wide_menu>.wrap>.dropdown-menu>ul>li {
 	display: inline-block;
-	width: 25%;
-	float: left;
-	margin: 0px 0px 30px;
-	padding: 0px 20px 0px 0px;
+	width: 24.5%;
+	margin: 0px;
+	padding: 0px 20px 30px 0px;
 }
 
 .menu-row .mega-menu table td.wide_menu>.wrap>.dropdown-menu>ul>li.has_img {
