@@ -6,7 +6,7 @@
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "left",
 		"COMPONENT_TEMPLATE" => "top_content_row",
-		"COUNT_ITEM" => "6",
+		"COUNT_ITEM" => "10",
 		"DELAY" => "N",
 		"MAX_LEVEL" => 1,
 		"MENU_CACHE_GET_VARS" => array(),

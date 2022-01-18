@@ -3,7 +3,7 @@ a.scroll-to-top.RECT_COLOR {
   background-color: #622e16;
 }
 a.scroll-to-top.ROUND_COLOR:hover,
-a.scroll-to-top.RECT_COLOR:hover { 
+a.scroll-to-top.RECT_COLOR:hover {
   background-color: #634739;
 }
 ul li::before {
@@ -581,7 +581,7 @@ h4.hover,
 .button.white_bg,
 .item .child_container .child_wrapp .menu_item.current a,
 .item .child_container .child_wrapp .menu_item:hover a {
-  color: #964b00
+  color: #4e2411;
 }
 button.button,
 input.button,

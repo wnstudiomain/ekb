@@ -120,11 +120,7 @@
 				<?$APPLICATION->IncludeFile(SITE_DIR."include/mainpage/company/front_img.php", Array(), Array( "MODE" => "html", "NAME" => GetMessage("FRONT_IMG") )); ?>
 			</div>
 			<div class="col-md-9 col-sm-9 big">
-				<?if($arRegion):?>
-					<?=$arRegion['DETAIL_TEXT'];?>
-				<?else:?>
 					<?$APPLICATION->IncludeComponent("bitrix:main.include", "front", Array("AREA_FILE_SHOW" => "file","PATH" => SITE_DIR."include/mainpage/company/front_info.php","EDIT_TEMPLATE" => ""));?>
-				<?endif;?>
 			</div>
 		</div>
 	</div>
