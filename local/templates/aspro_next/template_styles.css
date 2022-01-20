@@ -7025,6 +7025,10 @@ body.fill_bg_y .header_wrap header .header-wrapper {
 	font-size: 13px;
 }
 
+.menu-row .mega-menu table td.wide_menu>.wrap>.dropdown-menu>ul>li:not(.dropdown-submenu) {
+	top: -28px;
+}
+
 .menu-row .mega-menu table td.wide_menu>.wrap>.dropdown-menu>ul>li {
 	display: inline-block;
 	width: 24.5%;

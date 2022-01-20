@@ -1558,6 +1558,9 @@ ul.tabs li.stretch {
 			max-height: 120px;
 			height: 100%;
 		}
+		.catalog_block .item-stock, .catalog_block .article_block {
+			height: 60px;
+		}
 		.modal-mask .serach-wrapper h2 {
 			text-align: left;
 		}
