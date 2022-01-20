@@ -1559,7 +1559,11 @@ ul.tabs li.stretch {
 			height: 100%;
 		}
 		.catalog_block .item-stock, .catalog_block .article_block {
-			height: 60px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
 		}
 		.modal-mask .serach-wrapper h2 {
 			text-align: left;
