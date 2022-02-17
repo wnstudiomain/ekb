@@ -6,7 +6,7 @@ use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;
 ?>
 <?if($arResult["ID"]):?>
-	<?if($arParams["USE_REVIEW"] == "Y" && IsModuleInstalled("forum") && $USER->IsAuthorized()):?>
+	<?if($arParams["USE_REVIEW"] == "Y" && IsModuleInstalled("forum")):?>
 		<div id="reviews_content" class="reviews_content">
 			<?Bitrix\Main\Page\Frame::getInstance()->startDynamicWithID("area");?>
 				<?$APPLICATION->IncludeComponent(

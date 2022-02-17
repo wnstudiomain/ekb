@@ -2212,9 +2212,6 @@ if(((in_array('PREVIEW_PICTURE', $arParams['OFFERS_FIELD_CODE']) || in_array('DE
                                 товаров. Напишите, пожалуйста, свой отзыв, критику, похвалу - мы обязательно прочитаем,
                                 и учтем это в своей работе!
                             </p>
-                            <?
-                                global $USER;
-                            ?>
                             <?if(!$USER->IsAuthorized()):?>
                             <p>Для отправки комментария вам нужно  <a href="/auth/">авторизоваться</a>  или  <a
                                     href="/auth/registration/">зарегистрироваться</a></p>
