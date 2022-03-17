@@ -101,8 +101,8 @@ if($arParams["SHOW_NEXT_ELEMENT"] == "Y")
 				</div>
 			<?endif;?>
 		</div>
-		<div class="col-md-6">
-			<a class="back-url url-block" href="<?=$arResult['FOLDER'].$arResult['URL_TEMPLATES']['news']?>"><i class="fa fa-angle-left"></i><span><?=($arParams["T_PREV_LINK"] ? $arParams["T_PREV_LINK"] : GetMessage('BACK_LINK'));?></span></a>
-		</div>
+<!--		<div class="col-md-6">-->
+<!--			<a class="back-url url-block" href="--><?//=$arResult['FOLDER'].$arResult['URL_TEMPLATES']['news']?><!--"><i class="fa fa-angle-left"></i><span>--><?//=($arParams["T_PREV_LINK"] ? $arParams["T_PREV_LINK"] : GetMessage('BACK_LINK'));?><!--</span></a>-->
+<!--		</div>-->
 	</div>
 <?endif;?>

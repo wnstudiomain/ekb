@@ -1,8 +1,8 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог");
 $APPLICATION->IncludeComponent(
-	"bitrix:catalog", 
-	"main", 
+	"bitrix:catalog",
+	"main",
 	array(
 		"IBLOCK_TYPE" => "aspro_next_catalog",
 		"IBLOCK_ID" => "17",

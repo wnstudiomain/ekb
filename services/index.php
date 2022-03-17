@@ -96,7 +96,7 @@ $APPLICATION->SetTitle("Услуги");
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
 		"IMAGE_POSITION" => "left",
-		"USE_SHARE" => "Y",
+		"USE_SHARE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"USE_REVIEW" => "N",
 		"ADD_ELEMENT_CHAIN" => "Y",
@@ -117,7 +117,7 @@ $APPLICATION->SetTitle("Услуги");
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
 		"VIEW_TYPE" => "row_block",
-		"DETAIL_SET_CANONICAL_URL" => "N",
+		"DETAIL_SET_CANONICAL_URL" => "Y",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"SHOW_404" => "Y",
 		"MESSAGE_404" => "",
@@ -150,10 +150,11 @@ $APPLICATION->SetTitle("Услуги");
 			1 => "",
 		),
 		"FILE_404" => "",
+		"HIDE_NOT_AVAILABLE" => "N",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "#SECTION_CODE_PATH#/",
-			"detail" => "#SECTION_CODE_PATH#/#ELEMENT_CODE#/",
+			"detail" => "#ELEMENT_CODE#/",
 		)
 	),
 	false

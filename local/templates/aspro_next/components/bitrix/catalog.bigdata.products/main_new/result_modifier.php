@@ -30,6 +30,8 @@ if ('' == $arParams['TEMPLATE_THEME'])
 	$arParams['TEMPLATE_THEME'] = 'blue';
 
 if (!empty($arResult['ITEMS']))
+//    echo "<pre>Template arResult: "; print_r($arResult['ITEMS']); echo "</pre>";
+
 {
 	$arConvertParams = array();
 	if ('Y' == $arParams['CONVERT_CURRENCY'])

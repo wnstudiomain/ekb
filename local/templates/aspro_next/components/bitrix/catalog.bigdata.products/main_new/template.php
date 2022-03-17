@@ -163,12 +163,20 @@ if($arResult['ITEMS']){?>
 									<?
 
 									$item_id = $arItem["ID"];
+                                    $arPrice = CCatalogProduct::GetOptimalPrice($item_id);
 
-								    if($arItem["PRICES"])
+                                    foreach($arItem["PRICES"] as $key => $val){
+                                        $arItem["PRICES"][$key]['VALUE'] = $arPrice['RESULT_PRICE']['BASE_PRICE'];
+                                        $arItem["PRICES"][$key]['DISCOUNT_VALUE'] = $arPrice['RESULT_PRICE']['DISCOUNT_PRICE'];
+                                    }
+
+
+                                        if($arItem["PRICES"])
 									{
 										$arCountPricesCanAccess = 0;
 										$min_price_id=0;?>
 										<?\Aspro\Functions\CAsproItem::showItemPrices($arParams, $arItem["PRICES"], $minQuantity, $strMeasure, $min_price_id, 'Y');?>
+
 									<?}?>
 								<?}?>
 							</div>

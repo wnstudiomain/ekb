@@ -106,7 +106,7 @@
                                     <!-- /noindex -->
                                 </div>
                                 <div class="email blocks">
-                                    <a href="mailto:info@restoranica.ru">info@restoranica.ru</a>
+                                    <a href="mailto:info@restoranica.ru">sale@restoranica.ru</a>
                                 </div>
                                 <div class="address blocks">
                                     ул.Красных командиров, д.16

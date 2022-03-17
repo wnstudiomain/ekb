@@ -9,21 +9,21 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Ресторанам и кофейням", 
-		"/services/restoranam-i-kofejnyam/", 
+		"/services/restoranam-i-kofeynyamm/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Кофемашина в офис", 
-		"/services/kofemachina-v-ofis/", 
+		"/services/kofemashina-v-ofiss/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Сервисный центр", 
-		"/services/remont_diagnostika_kofemashin/", 
+		"/services/servisnyy-tsentr/", 
 		Array(), 
 		Array(), 
 		"" 
