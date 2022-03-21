@@ -297,7 +297,7 @@ if($arAccessories){
 				<?endforeach;?>
 			</ul>
 		</div>
-	
+
 		<?$disply_elements=($arParams["DISPLAY_ELEMENT_SLIDER"] ? $arParams["DISPLAY_ELEMENT_SLIDER"] : 10);?>
 		<ul class="tabs_content">
 			<?foreach($arTab as $code=>$title){?>
@@ -370,8 +370,8 @@ if($arAccessories){
 						);
 						?>
 					<?}else{?>
-						<div class="flexslider loading_state shadow border custom_flex top_right" data-plugin-options='{"animation": "slide", "animationSpeed": 600, "directionNav": true, "controlNav" :false, "animationLoop": true, "slideshow": false, "controlsContainer": ".tabs_slider_navigation.<?=$code?>_nav", "counts": [4,3,3,2,1]}'>
-						<ul class="tabs_slider <?=$code?>_slides slides">
+						<div class="swiper-container <?=$code?>_recommended-swiper bigdata_recommended-swiper">
+						<ul class="swiper-wrapper tabs_slider <?=$code?>_slides slides catalog_block">
 							<?$GLOBALS['arrFilter'.$code] = array( "ID" => $arAllValues[$code] );?>
 							<?$APPLICATION->IncludeComponent(
 								"bitrix:catalog.top",
@@ -454,6 +454,9 @@ if($arAccessories){
 								false, array("HIDE_ICONS"=>"Y")
 							);?>
 						</ul>
+                            <ul class="slider_navigation top custom_flex border">
+                                <li class="tabs_slider_navigation <?=$code?>_nav cur" data-code="<?=$code?>"><ul class="flex-direction-nav"><li class="flex-nav-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-77f4fc1065a647f17" aria-disabled="true"><a class="flex-prev" href="#">Previous</a></li><li class="flex-nav-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-77f4fc1065a647f17" aria-disabled="false"><a class="flex-next" href="#">Next</a></li></ul></li>
+                            </ul>
 						</div>
 					<?}?>
 				</li>
@@ -489,7 +492,33 @@ if ($arNavParams){
 }
 ?>
 <script type="text/javascript">
-	if(!$('.js_seo_title').length)
+    $(document).ready(function(){
+        $('.tabs li[data-code="ASSOCIATED"]').show();
+        var swiper = new Swiper('.ASSOCIATED_recommended-swiper', {
+            slidesPerView: 1.7,
+            freeMode: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2.2,
+                    freeMode: true,
+                },
+                768: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5,
+                },
+            },
+            navigation: {
+                nextEl: '.flex-nav-next',
+                prevEl: '.flex-nav-prev',
+            },
+        });
+    })
+
+    if(!$('.js_seo_title').length)
 		$('<span class="js_seo_title" style="display:none;"></span>').appendTo($('body'));
 	BX.addCustomEvent(window, "onAjaxSuccess", function(e){
 		var arAjaxPageData = <?=CUtil::PhpToJSObject($arAdditionalData, true, true, true);?>;
