@@ -4684,6 +4684,18 @@ ul.tabs li.stretch {
 	.wrapper_inner .cost.prices .price {
 		font-size: 18px;
 	}
+	.info_item .middle_info .prices_block .prices {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.info_item .middle_info .prices_block .exchange-rate {
+		margin-left: 0;
+		padding: 8px 0;
+	}
+	.info_item .top_info {
+		padding: 28px 10px 19px;
+		border-bottom: 1px solid #F2F2F2;
+	}
 	.wrapper_inner .catalog_detail .cost.prices .price {
 		font-size: 24px;
 	}

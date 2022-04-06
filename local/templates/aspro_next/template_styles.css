@@ -19411,6 +19411,19 @@ body .tabs_section>.wraps:last-child {
 	color: #f91155;
 }
 
+.info_item .middle_info .prices_block .prices {
+	display: flex;
+	align-items: flex-start;
+}
+
+.info_item .middle_info .prices_block .exchange-rate {
+	color: #e52929;
+	font-size: 12px;
+	margin-bottom: 0;
+	margin-left: 15px;
+	line-height: 1.3;
+}
+
 .element_4 .quantity_block_wrapper>div {
 	margin-bottom: 10px;
 }
@@ -20142,6 +20155,7 @@ body .wraps .instagram_wrapper>.maxwidth-theme {
 	line-height: 20px;
 	padding-right: 5px;
 	display: flex;
+	padding-top: 5px;
 	justify-content: flex-start;
 }
 

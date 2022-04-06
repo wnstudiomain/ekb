@@ -557,7 +557,11 @@ $arViewedData = array(
                         <?endif;?>
                         <?}?>
                         <?}?>
-
+                        <?if ($arResult['PROPERTIES']['EXCHANGE_RATES']['VALUE_XML_ID']=="Y"){?>
+                            <p class="exchange-rate">
+                                Внимание! Цена на товар может отличаться из-за колебаний курса. Уточните цену у менеджера
+                            </p>
+                        <?}?>
                     </div>
                     <?if($arParams["SHOW_DISCOUNT_TIME"]=="Y"){?>
                     <?$arUserGroups = $USER->GetUserGroupArray();?>
