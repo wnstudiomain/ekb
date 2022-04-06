@@ -1,12 +1,12 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог");
 $APPLICATION->IncludeComponent(
-	"bitrix:catalog",
-	"main",
+	"bitrix:catalog", 
+	"main", 
 	array(
 		"IBLOCK_TYPE" => "aspro_next_catalog",
 		"IBLOCK_ID" => "17",
-		"HIDE_NOT_AVAILABLE" => "N",
+		"HIDE_NOT_AVAILABLE" => "L",
 		"BASKET_URL" => "/basket/",
 		"ACTION_VARIABLE" => "action",
 		"PRODUCT_ID_VARIABLE" => "id",
@@ -497,7 +497,7 @@ $APPLICATION->IncludeComponent(
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
 		"DETAIL_OFFERS_LIMIT" => "0",
 		"DETAIL_EXPANDABLES_TITLE" => "Аксессуары",
-		"DETAIL_ASSOCIATED_TITLE" => "Похожие товары",
+		"DETAIL_ASSOCIATED_TITLE" => "С этим товаром покупают",
 		"DETAIL_PICTURE_MODE" => "MAGNIFIER",
 		"SHOW_UNABLE_SKU_PROPS" => "Y",
 		"HIDE_NOT_AVAILABLE_OFFERS" => "Y",
@@ -633,6 +633,7 @@ $APPLICATION->IncludeComponent(
 		"FILE_404" => "",
 		"ALT_TITLE_GET" => "NORMAL",
 		"BUNDLE_ITEMS_COUNT" => "3",
+		"SHOW_SKU_DESCRIPTION" => "N",
 		"SEF_URL_TEMPLATES" => array(
 			"sections" => "",
 			"section" => "#SECTION_CODE_PATH#/",
