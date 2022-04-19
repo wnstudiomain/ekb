@@ -5,6 +5,7 @@
 use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;
 ?>
+
 <?if($arResult["ID"]):?>
 	<?if($arParams["USE_REVIEW"] == "Y" && IsModuleInstalled("forum")):?>
 		<div id="reviews_content" class="reviews_content">
@@ -165,3 +166,24 @@ use Bitrix\Main\ModuleManager;
 		</script>
 	<?}?>
 <?}?>
+<?if ($arResult['SEO']['META_TITLE']) {
+		$APPLICATION->SetTitle($arResult['SEO']['META_TITLE']);
+	    $APPLICATION->SetPageProperty("title", $arResult['SEO']['META_TITLE']);
+		$APPLICATION->ShowMeta("title");
+		echo "<pre>Template arResult: "; print_r($arResult['SEO']['META_DESCRIPTION']); echo "</pre>";
+	}
+?>
+<?if ($arResult['SEO']['META_DESCRIPTION']) {
+	    $APPLICATION->SetPageProperty("description", $arResult['SEO']['META_DESCRIPTION']);
+	}
+?>
+<?$APPLICATION->ShowTitle();
+$APPLICATION->SetPageProperty("description",'rsdrdsd');?>
+<?
+if ($arResult['SEO']['ELEMENT_META_TITLE']) {
+	$APPLICATION->SetPageProperty("title", $arResult['SEO']['ELEMENT_META_TITLE']);
+}
+if ($arResult['SEO']['ELEMENT_META_DESCRIPTION']) {
+	$APPLICATION->SetPageProperty("description", $arResult['SEO']['ELEMENT_META_DESCRIPTION']);
+}
+?>

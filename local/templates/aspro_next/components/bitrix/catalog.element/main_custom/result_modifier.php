@@ -1139,3 +1139,20 @@ if(is_array($arParams["SECTION_TIZER"]) && $arParams["SECTION_TIZER"]){
 	}
 	$arResult["TIZERS_ITEMS"]=$arTizersData;
 }?>
+
+<?
+$ipropValues = new \Bitrix\Iblock\InheritedProperty\ElementValues($arResult['IBLOCK_ID'], $arResult['ID']);
+$SEO = $ipropValues->getValues();
+if ($arResult['PROPERTIES']['SEO_META_TITLE']['VALUE']) {
+	$SEO["ELEMENT_META_TITLE"] = $arResult['PROPERTIES']['SEO_META_TITLE']['VALUE'];
+}
+if ($arResult['PROPERTIES']['SEO_META_DESCRIPTION']['VALUE']) {
+	$SEO["ELEMENT_META_DESCRIPTION"] = $arResult['PROPERTIES']['SEO_META_DESCRIPTION']['VALUE'];
+}
+$cp = $this->__component;
+if (is_object($cp)) {
+	$cp->arResult['SEO'] = $SEO;
+	$cp->SetResultCacheKeys(array('SEO'));
+	$arResult['SEO'] = $cp->arResult['SEO'];
+	}
+?>

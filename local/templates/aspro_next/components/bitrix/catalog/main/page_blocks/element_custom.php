@@ -1,20 +1,20 @@
-<?$ElementID = $APPLICATION->IncludeComponent(
+<? $ElementID = $APPLICATION->IncludeComponent(
 	"bitrix:catalog.element",
 	"main_custom",
-	Array(
+	array(
 		"USE_REGION" => ($arRegion ? "Y" : "N"),
-		"SECTION_TIZER"=>$arSection["UF_TIZERS"],
+		"SECTION_TIZER" => $arSection["UF_TIZERS"],
 		"ALT_TITLE_GET" => $arParams["ALT_TITLE_GET"],
 		"SHOW_DISCOUNT_TIME_EACH_SKU" => $arParams["SHOW_DISCOUNT_TIME_EACH_SKU"],
-		"SHOW_UNABLE_SKU_PROPS"=>$arParams["SHOW_UNABLE_SKU_PROPS"],
+		"SHOW_UNABLE_SKU_PROPS" => $arParams["SHOW_UNABLE_SKU_PROPS"],
 		"SHOW_ARTICLE_SKU" => $arParams["SHOW_ARTICLE_SKU"],
 		"SHOW_MEASURE_WITH_RATIO" => $arParams["SHOW_MEASURE_WITH_RATIO"],
 		"STORES_FILTER" => ($arParams["STORES_FILTER"] ? $arParams["STORES_FILTER"] : "TITLE"),
 		"STORES_FILTER_ORDER" => ($arParams["STORES_FILTER_ORDER"] ? $arParams["STORES_FILTER_ORDER"] : "SORT_ASC"),
 		"BUNDLE_ITEMS_COUNT" => $arParams["BUNDLE_ITEMS_COUNT"],
 		"WIDE_BLOCK" => $isWideBlock,
-		"DETAIL_DOCS_PROP"=>$arParams["DETAIL_DOCS_PROP"],
-		"SHOW_DISCOUNT_TIME"=>$arParams["SHOW_DISCOUNT_TIME"],
+		"DETAIL_DOCS_PROP" => $arParams["DETAIL_DOCS_PROP"],
+		"SHOW_DISCOUNT_TIME" => $arParams["SHOW_DISCOUNT_TIME"],
 		"TYPE_SKU" => ($typeSKU ? $typeSKU : $arTheme["TYPE_SKU"]["VALUE"]),
 		"SEF_URL_TEMPLATES" => $arParams["SEF_URL_TEMPLATES"],
 		"IBLOCK_REVIEWS_TYPE" => $arParams["IBLOCK_REVIEWS_TYPE"],
@@ -37,7 +37,8 @@
 		"CACHE_TYPE" => $arParams["CACHE_TYPE"],
 		"CACHE_TIME" => $arParams["CACHE_TIME"],
 		"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
-		"SET_TITLE" => $arParams["SET_TITLE"],
+		"SET_BROWSER_TITLE" => "N",
+		"SET_META_DESCRIPTION" => "N",
 		"SHOW_CHEAPER_FORM" => $arParams["SHOW_CHEAPER_FORM"],
 		"SET_CANONICAL_URL" => $arParams["DETAIL_SET_CANONICAL_URL"],
 		"SET_LAST_MODIFIED" => "Y",
@@ -70,8 +71,8 @@
 		"ELEMENT_CODE" => $arResult["VARIABLES"]["ELEMENT_CODE"],
 		"SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
 		"SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
-		"SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
-		"DETAIL_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["element"],
+		"SECTION_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["section"],
+		"DETAIL_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["element"],
 		"ADD_SECTIONS_CHAIN" => $arParams["ADD_SECTIONS_CHAIN"],
 		"ADD_ELEMENT_CHAIN" => $arParams["ADD_ELEMENT_CHAIN"],
 		"USE_STORE" => $arParams["USE_STORE"],
@@ -148,8 +149,8 @@
 		'DATA_LAYER_NAME' => (isset($arParams['DATA_LAYER_NAME']) ? $arParams['DATA_LAYER_NAME'] : ''),
 
 
-		"USE_GIFTS_DETAIL" => $arParams['USE_GIFTS_DETAIL']?: 'Y',
-		"USE_GIFTS_MAIN_PR_SECTION_LIST" => $arParams['USE_GIFTS_MAIN_PR_SECTION_LIST']?: 'Y',
+		"USE_GIFTS_DETAIL" => $arParams['USE_GIFTS_DETAIL'] ?: 'Y',
+		"USE_GIFTS_MAIN_PR_SECTION_LIST" => $arParams['USE_GIFTS_MAIN_PR_SECTION_LIST'] ?: 'Y',
 		"GIFTS_SHOW_DISCOUNT_PERCENT" => $arParams['GIFTS_SHOW_DISCOUNT_PERCENT'],
 		"GIFTS_SHOW_OLD_PRICE" => $arParams['GIFTS_SHOW_OLD_PRICE'],
 		"GIFTS_DETAIL_PAGE_ELEMENT_COUNT" => $arParams['GIFTS_DETAIL_PAGE_ELEMENT_COUNT'],
@@ -181,4 +182,8 @@
 		"BLOCK_ADDITIONAL_GALLERY_NAME" => $arParams["BLOCK_ADDITIONAL_GALLERY_NAME"],
 	),
 	$component
-);?>
+);
+echo "<pre>Template arResult: ";
+print_r($ElementID);
+echo "</pre>"; ?>
+?>
