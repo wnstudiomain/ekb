@@ -166,19 +166,6 @@ use Bitrix\Main\ModuleManager;
 		</script>
 	<?}?>
 <?}?>
-<?if ($arResult['SEO']['META_TITLE']) {
-		$APPLICATION->SetTitle($arResult['SEO']['META_TITLE']);
-	    $APPLICATION->SetPageProperty("title", $arResult['SEO']['META_TITLE']);
-		$APPLICATION->ShowMeta("title");
-		echo "<pre>Template arResult: "; print_r($arResult['SEO']['META_DESCRIPTION']); echo "</pre>";
-	}
-?>
-<?if ($arResult['SEO']['META_DESCRIPTION']) {
-	    $APPLICATION->SetPageProperty("description", $arResult['SEO']['META_DESCRIPTION']);
-	}
-?>
-<?$APPLICATION->ShowTitle();
-$APPLICATION->SetPageProperty("description",'rsdrdsd');?>
 <?
 if ($arResult['SEO']['ELEMENT_META_TITLE']) {
 	$APPLICATION->SetPageProperty("title", $arResult['SEO']['ELEMENT_META_TITLE']);

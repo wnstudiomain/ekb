@@ -1,6 +1,4 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
-echo "<pre>Template arResult: "; print_r($arResult['SEO']); echo "</pre>";?>
 <div class="basket_props_block" id="bx_basket_div_<?=$arResult["ID"];?>" style="display: none;">
     <?if (!empty($arResult['PRODUCT_PROPERTIES_FILL'])){
     foreach ($arResult['PRODUCT_PROPERTIES_FILL'] as $propID => $propInfo){?>
@@ -561,7 +559,7 @@ $arViewedData = array(
                         <?}?>
                         <?if ($arResult['PROPERTIES']['EXCHANGE_RATES']['VALUE_XML_ID']=="Y"){?>
                             <p class="exchange-rate">
-                                Внимание! Цена товара может отличаться из-за колебаний курса. Уточните цену у менеджера
+                                Внимание! Цена на товар может отличаться из-за колебаний курса. Уточните цену у менеджера
                             </p>
                         <?}?>
                     </div>
