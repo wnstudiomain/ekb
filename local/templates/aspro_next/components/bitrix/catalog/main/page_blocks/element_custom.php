@@ -183,7 +183,4 @@
 	),
 	$component
 );
-echo "<pre>Template arResult: ";
-print_r($ElementID);
-echo "</pre>"; ?>
 ?>
