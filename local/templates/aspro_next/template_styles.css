@@ -20063,6 +20063,10 @@ body .wraps .instagram_wrapper>.maxwidth-theme {
 	color: #555;
 }
 
+.tab-content .additional_block p {
+	font-size: 14px;
+}
+
 .ajax_load.block.goods-block .footer_button .offer_buy_block>.read_more,
 .ajax_load.block.goods-block .footer_button>.read_more {
 	margin-top: 11px;
